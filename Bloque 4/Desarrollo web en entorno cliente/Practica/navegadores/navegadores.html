@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegadores: Modificación de colores según el tamaño</title>
+
+    <link type="text/css" rel="stylesheet" href="navegadores.css"/>
+</head>
+<body>
+    <div id="page">
+        <h1 style="align-content: center;" id="head"></h1> 
+        <div id="lienzo">
+             <div id="c1" class="color"></div>
+             <div id="c2" class="color"></div>
+             <div id="c3" class="color"></div>
+        </div>
+        <div id="controles">
+         <p>Selecciona un color</p>
+         <button name="red" value="rojos" onclick="cambiacolor('rojo')">Rojos</button>
+         <button name="blue" value="azules" onclick="cambiacolor('azul')">Azules</button>
+         <button name="green" value="verdes" onclick="cambiacolor('verde')">Verdes</button>
+        </div>
+    </div>
+</body>
+<script src="navegadores.js"></script>
+</html>
