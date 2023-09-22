@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de mascotas</title>
+    <link type="text/css" rel="stylesheet" href="mascotas.css"/>
+    
+</head>
+<body>
+    <table width=500 border="1" summary="Seleccion">
+        <th colspan="4" >
+            Selecciona la edad y la forma de visualización
+        </th>
+        <tr>
+            <td colspan="4" align="center">Rango de edad de mascotas</td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="age" value="3"><label>De 0 a 3 años</label></td>
+          <td><input type="radio" name="age" value="8"><label>De 4 a 8 años</label></td>
+          <td><input type="radio" name="age" value="12"><label>De 9 a 12 años</label></td>
+          <td><input type="radio" name="age" value="50"><label>Mayor de 12 años</label></td>              
+        </tr>
+        <tr>
+          <td colspan="2" align="center"><label for="displaymode">Modo de visualización</label></td>
+          <td colspan="2" align="center"><select id="displaymode" name="displaymode">
+            <option value="ninguno">Elegir un tipo</option>
+            <option value="list">Listado simple</option>
+            <option value="table">Tabla</option>
+            </select>
+          </td>
+        </tr>
+    </table>
+
+    <button id="show">Escribir Mascotas</button>
+
+    <div id="listado">
+
+    </div>
+    <script src="mascotas.js"></script>
+</body>
+</html>
