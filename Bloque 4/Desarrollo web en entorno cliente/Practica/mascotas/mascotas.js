@@ -23,24 +23,10 @@ const pets = [
 
 const btnStart = document.getElementById("show");
 
-function write() {
-  let isAge = document.querySelector('input[name="age"]:checked');
-  let a = isAge ? parseInt(isAge.value) : 0;
-
-  let petList = selectByAge(a);
-
-  const listType = document.getElementById("displaymode");
-  let ltype = listType.options[listType.selectedIndex].value;
-
-  if (ltype == "list") writeList(petList);
-  if (ltype == "table") writeTable(petList);
-}
-
-
 function selectByAge(a) {
   let petsByAge = [];
   for (let n = 0; n < pets.length; n++) {
-    if (pets[n] < a) petsByAge.push(pets[n]);
+    if (pets[n].age < a) petsByAge.push(pets[n]);
   }
   return petsByAge;
 }
@@ -51,15 +37,15 @@ function writeList(l) {
     listado += "<p>";
     listado += l[n].id + ":   ";
     listado += " es de " + l[n].owner + ",   ";
-    listado += " tiene" + l[n].age + " años ";
+    listado += " tiene " + l[n].age + " años ";
     listado += " y se llama " + l[n].dog_name;
     listado += "</p>";
   }
-  document.getElementById("listado").innerText = listado;
+  document.getElementById("listado").innerHTML = listado;
 }
 
 function writeTable(l) {
-  let tablero = "<table>";
+  let listado = "<table>";
   for (let n = 0; n < l.length; n++) {
     listado += "<tr>";
     listado += "<td>" + l[n].id + "</td>";
@@ -69,8 +55,20 @@ function writeTable(l) {
     listado += "</tr>";
   }
   listado += "</table>";
-  document.getElementById("listado").innerText = listado;
+  document.getElementById("listado").innerHTML = listado;
 }
 
+function write() {
+  let isAge = document.querySelector('input[name="age"]:checked');
+  let a = isAge ? isAge.value : 0;
+
+  let petList = selectByAge(a);
+
+  const listType = document.getElementById("displaymode");
+  let ltype = listType.options[listType.selectedIndex].value;
+
+  if (ltype == "list") writeList(petList);
+  if (ltype == "table") writeTable(petList);
+}
 
 btnStart.addEventListener("click", write);
