@@ -14,6 +14,6 @@ function calcularMultiplos3(){
             puntero++//incrementamos el puntero
         }
     } 
-    document.getElementById("resultado").innerText = lmulti3;
+    document.getElementById("pizarra").innerText = lmulti3;
 }
 
