@@ -7,11 +7,11 @@ const fin = 100;
 
 function calcularMultiplos3(){
     let lmulti3 = [];
-    let puntero=0;
+    let puntero=0;//empezamos en 0 porq asi lo hacen los arrays
     for (let n = inicio;n<=fin;n++){
         if(n%3==0) {
-            lmulti3[puntero]=n;
-            puntero++
+            lmulti3[puntero]=n;//añadimos el numero en el array
+            puntero++//incrementamos el puntero
         }
     } 
     document.getElementById("resultado").innerText = lmulti3;
