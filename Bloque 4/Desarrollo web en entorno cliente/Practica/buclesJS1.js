@@ -3,11 +3,11 @@
 function mensajeDomingo(){
     let dia=prompt("¿Que dia de la semana es?","introduce el día")
     if (dia.toLowerCase()=="domingo")
-        window("Ole los caracoleeeee");
+        window.alert("Ole los caracoleeeee");
 }
 
 function analisisEdad(){
-
+    
 }
 
 function analisisPrecisoEdad(){
