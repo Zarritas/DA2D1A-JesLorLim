@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
 <body>
-    <form method="post">
-        <label>Texto</label><input type="text" name="Texto"><br>
-        <label>Texto Contraseña</label><input type="password" name="Contraseña"><br>
-        <label>Texto Oculto</label><input type="hidden" name="Oculto"><br>
-        <label>Text Area</label><textarea></textarea><br>
-        <label>Radio</label><br>
-        <input type="radio" name="prueba_radio" value="1">1
-        <input type="radio" name="prueba_radio" value="2">2
-        <input type="radio" name="prueba_radio" value="3">3
-        <input type="radio" name="prueba_radio" value="4">4<br>
-        <label>Checkbox</label><br>
-        <input type="checkbox" name="prueba_checkbox" value="1">1
-        <input type="checkbox" name="prueba_checkbox" value="2">2
-        <input type="checkbox" name="prueba_checkbox" value="3">3
-        <input type="checkbox" name="prueba_checkbox" value="4">4<br>
-        <label>Selección</label><select>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select><br>
-        <label>Selección multiple</label><select multiple>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-        </select><br>
-        <label>Archivo</label><input type="file"><br>
-        <label>Varios archivos</label><input type="file" multiple><br>
-        <input type="image" src="Sin título.jpeg" width="40px">
-        <input type="submit">
-        <input type="reset">
-        <button>Botón</button>
+    <form method="get">
+        <label id="lab_Texto" for="Texto">Texto</label><input type="text" name="Texto" id="Texto" /><br />
+
+        <label id="lab_clave" for="clave">Texto Contraseña</label><input type="password" name="clave" id="clave" /><br />
+
+        <input type="hidden" name="pi" id="pi" value="3.1415"/>
+
+        <label id="lab_texto_area" for="texto_area">Text Area</label>
+        <textarea name="texto_area" id="texto_area" placeholder="hola"></textarea><br />
+
+        <label id="lab_radio"><b>Radio</b></label><br />
+        <input type="radio" name="genero" id="Femenino" value="f" /><label id="rad_fem" for="Femenino">Femenino</label>
+        <input type="radio" name="genero" id="Masculino" value="f" /><label id="rad_masc" for="Masculino">Masculino</label>
+        <input type="radio" name="genero" id="Otro" value="f" /><label id="rad_otro" for="Otro">Otro</label><br />
+        <label id="lab_checkbox"><b>Checkbox</b></label>
+        <br />
+
+        <input type="checkbox" name="prueba_checkbox" id="checkbox_1" value="1" /><label for="checkbox_1">1</label>
+        <input type="checkbox" name="prueba_checkbox" id="checkbox_2" value="2" /><label for="checkbox_2">2</label>
+        <input type="checkbox" name="prueba_checkbox" id="checkbox_3" value="3" /><label for="checkbox_3">3</label>
+        <input type="checkbox" name="prueba_checkbox" id="checkbox_4" value="4" /><label for="checkbox_4">4</label>
+        <br />
+
+        <label id="lab_select" for="select">Selección</label><select id="select" name="Select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected="selected">3</option>
+            <option value="4">4</option>
+        </select><br />
+
+        <label id="lab_select_multi" for="select_multi">Selección multiple</label><select name="Select_multiple" id="select_multi" multiple="multiple">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected="selected">3</option>
+            <option value="4">4</option>
+        </select><br />
+
+        <label id="lab_archivo" for="arch">Archivo</label><input type="file" id="arch" name="arch"/><br />
+
+        <label id="lab_multi_arch" for="multi_arch">Varios archivos</label>
+        <input type="file" multiple="multiple" id="multi_arch" name="multi_arch"/><br />
+
+        <input type="image" src="Sin título.jpeg" width="200px" height="200px" alt="imagen de envio" id="btn_img"/>
+
+        <input type="submit" id="btn_enviar" />
+
+        <input type="reset" id="btn_reset" />
+
+        <button id="boton">Botón</button>
 
     </form>
 </body>
