@@ -32,21 +32,19 @@
         <fieldset>
             <legend>Tiendas</legend>
             <input type="radio" name="tienda" id="madrid" value="Madrid" />
-            <input type="hidden" name="direccion_madrid" value="C/alcala, 12, 28005, Madrid" />
             <label for="madrid">Madrid</label><br />
 
             <input type="radio" name="tienda" id="barcelona" value="Barcelona" />
-            <input type="hidden" name="direccion_barcelona" value="C/La Rambla, 16, 04505, Barcelona" />
             <label for="barcelona">Barcelona</label><br />
 
             <input type="radio" name="tienda" id="sevilla" value="Sevilla" />
-            <input type="hidden" name="direccion_sevilla" value="C/Illo, 5, 21008, Sevilla" />
             <label for="sevilla">Sevilla</label><br />
 
             <input type="radio" name="tienda" id="santiago" value="Santiago de Compostela" />
-            <input type="hidden" name="direccion_santiago" value="C/Coc Aina, 9, 15008, Santiago" />
             <label for="santiago">Santiago de Compostela</label>
 
+            <input type="hidden" nombre="direccion" id="id_direccion">
+            <input type="hidden" nombre="cPostal" id="id_cPostal">
         </fieldset>
         <fieldset>
             <legend>Accesorios</legend>
@@ -64,7 +62,7 @@
             <br />
             <label for="id_precio">Precio del producto</label>
             <input type="range" name="precio" id="id_precio" max="100" min="10" step="0.01" oninput="cambioPrecio()" />
-            <input size="5" type="number" max="100" min="10" id="precio" oninput="precioSlider()" />€
+            <input size="6" type="number" max="100" min="10" id="precio" oninput="precioSlider()" />€
             <br />
         </fieldset>
         <fieldset>
@@ -79,10 +77,10 @@
             <label for="id_email_usu">Email del responsable del envío</label><input type="email" name="email_usu"
                 id="id_email_usu" /><br />
             <hr />
-            <input type="button" value="enviar" onclick="recogidaDatos()" />
+            <input type="button" value="enviar los datos" onclick="recogidaDatos()" />
+            <input type="reset" value="borrar los datos">
         </fieldset>
     </form>
-
     <div id="solucion"></div>
 </body>
 <script src="JLL_ejercicios_formularios_1.js"></script>

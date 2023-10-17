@@ -1,14 +1,4 @@
-//variables
-let grupoDatos;
-function cambioPrecio() {
-    let precio_directo = document.getElementById("id_precio").value
-    document.getElementById("precio").value = precio_directo;
-}
-function precioSlider() {
-    let precio_directo = parseFloat(document.getElementById("precio").value);
-    document.getElementById("id_precio").value = precio_directo;
-}
-//marcar y desmarcar accesorios
+//funciones varias
 function marcarTodas() {
     const all = document.getElementsByName("accesorios");
     all.forEach(item => item.checked = true);
@@ -17,8 +7,15 @@ function desmarcarTodas() {
     const all = document.getElementsByName("accesorios");
     all.forEach(item => item.checked = false);
 }
-
-
+function cambioPrecio() {
+    let precio_directo = document.getElementById("id_precio").value
+    document.getElementById("precio").value = precio_directo;
+}
+function precioSlider() {
+    let precio_directo = parseFloat(document.getElementById("precio").value);
+    document.getElementById("id_precio").value = precio_directo;
+}
+//funcion recogida de datos
 function recogidaDatos() {
     let id_prod = "Id del Producto: " + document.getElementById("id_producto").value + "<br>";
     let nombre = "Nombre: " + document.getElementById("id_nombre").value + "<br>";
@@ -26,17 +23,36 @@ function recogidaDatos() {
     let pass = "Contraseña para dar del alta: " + document.getElementById("id_password").value + "<br>";
     let fecha = "Fecha de envio: " + document.getElementById("id_fecha_envio").value + "<br>";
     let tipo = "tipo de producto: " + document.getElementById("id_tipo_prod").value + "<br>";
-    let tienda = "Dirección de la tienda: ";
-
-    if (document.getElementsByName("tienda").value == "Madrid") {
-        tienda += document.getElementById("direccion_madrid").value;
-    } else if (document.getElementsByName("tienda").value == "Barcelona") {
-        tienda += document.getElementById("direccion_barcelona").value;
-    } else if (document.getElementsByName("tienda").value == "Sevilla") {
-        tienda += document.getElementById("direccion_sevilla").value;
-    } else if (document.getElementsByName("tienda").value == "Santiago de Compostela") {
-        tienda += document.getElementById("direccion_santiago").value;
-    };
+    let tienda = document.querySelector('input[name="tienda"]:checked').value;
+    let discTienda = "";
+    let cpTienda = "";
+    switch (tienda) {
+        case "Madrid":
+            discTienda= "C/Alcala";
+            cpTienda = "28005";
+            document.getElementById("id_direccion").value = discTienda;
+            document.getElementById("id_cPostal").value = cpTienda;
+            break;
+        case "Barcelona":
+            discTienda= "C/La Rambla";
+            cpTienda = "04505";
+            document.getElementById("id_direccion").value = discTienda;
+            document.getElementById("id_cPostal").value = cpTienda;
+            break;
+        case "Sevilla":
+            discTienda= "C/Illo";
+            cpTienda = "21008";
+            document.getElementById("id_direccion").value = discTienda;
+            document.getElementById("id_cPostal").value = cpTienda;
+            break;
+        case "Santiago de Compostela":
+            discTienda= "C/Coc Aina";
+            cpTienda = "15008";
+            document.getElementById("id_direccion").value = discTienda;
+            document.getElementById("id_cPostal").value = cpTienda;
+            break;
+    }
+    tienda = "Dirección de la tienda: "+discTienda+", "+cpTienda;
 
     let arrayAccesorios = []
     index = 0;
