@@ -2,78 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ejercicios formularios 1</title>
 </head>
 
 <body>
-    <form name="form1" method="get">
-        <h1>Datos del producto</h1>
-        <label for="id_producto">Código del producto</label><input type="number" id="id_producto" min="1000"
-            max="2000"><br>
-        <label for="id_producto">Nombre del producto</label><input type="text" name="nombre" id=""><br>
-        <label for="id_producto">Descripción del producto</label><textarea name="" id="" cols="30"
-            rows="5"></textarea><br>
-        <label for="id_producto">Contraseña para dar de alta el envío</label><input type="password" name="nombre"
-            id=""><br>
-        <label for="id_producto">Fecha de envío</label><input type="date" name="nombre" id=""><br>
-        <label for="id_tipo_prod">Selecciona el tipo de producto</label>
-        <select id="id_tipo_prod">
-            <option value="Otro">Otro</option>
-            <option value="consola">Consola</option>
-            <option value="videojuego">Videojuego</option>
-            <option value="accesorio">Accesorio</option>
-            <option value="merchan">Merchandaising</option>
-        </select>
-        <hr>
-        <h1>Tiendas</h1>
-        <input type="radio" name="tienda" id="madrid" value="Madrid">
-        <input type="hidden" name="direccion_madrid" value="C/alcala, 12, 28005, Madrid">
-        <label for="madrid">Madrid</label><br>
+    <form name="form1">
+        <fieldset>
+            <legend>Datos del producto</legend>
+            <label for="id_producto">Código del producto</label><input type="number" id="id_producto" min="1000"
+                max="2000" /><br />
+            <label for="id_nombre">Nombre del producto</label><input type="text" name="nombre" id="id_nombre" /><br />
+            <label for="id_descripcion">Descripción del producto</label><textarea name="descripcion" id="id_descripcion"
+                cols="30" rows="5"></textarea><br />
+            <label for="id_password">Contraseña para dar de alta el envío</label><input type="password" name="password"
+                id="id_password" /><br />
+            <label for="id_fecha">Fecha de envío</label><input type="date" name="fecha_envio"
+                id="id_fecha_envio" /><br />
+            <label for="id_tipo_prod">Selecciona el tipo de producto</label>
+            <select id="id_tipo_prod">
+                <option value="Otro">Otro</option>
+                <option value="consola">Consola</option>
+                <option value="videojuego">Videojuego</option>
+                <option value="accesorio">Accesorio</option>
+                <option value="merchan">Merchandaising</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tiendas</legend>
+            <input type="radio" name="tienda" id="madrid" value="Madrid" />
+            <input type="hidden" name="direccion_madrid" value="C/alcala, 12, 28005, Madrid" />
+            <label for="madrid">Madrid</label><br />
 
-        <input type="radio" name="tienda" id="barcelona" value="Barcelona">
-        <input type="hidden" name="direccion_barcelona" value="C/cantona, 16, 04505, Barcelona">
-        <label for="barcelona">Barcelona</label><br>
+            <input type="radio" name="tienda" id="barcelona" value="Barcelona" />
+            <input type="hidden" name="direccion_barcelona" value="C/La Rambla, 16, 04505, Barcelona" />
+            <label for="barcelona">Barcelona</label><br />
 
-        <input type="radio" name="tienda" id="sevilla" value="Sevilla">
-        <input type="hidden" name="direccion_sevilla" value="C/Illo, 5, 21008, Sevilla">
-        <label for="sevilla">Sevilla</label><br>
+            <input type="radio" name="tienda" id="sevilla" value="Sevilla" />
+            <input type="hidden" name="direccion_sevilla" value="C/Illo, 5, 21008, Sevilla" />
+            <label for="sevilla">Sevilla</label><br />
 
-        <input type="radio" name="tienda" id="santiago" value="Santiago de Compostela">
-        <input type="hidden" name="direccion_sevilla" value="C/Coc Aina, 9, 15008, Santiago">
-        <label for="santiago">Santiago de Compostela</label>
+            <input type="radio" name="tienda" id="santiago" value="Santiago de Compostela" />
+            <input type="hidden" name="direccion_santiago" value="C/Coc Aina, 9, 15008, Santiago" />
+            <label for="santiago">Santiago de Compostela</label>
 
-        <hr>
-        <h1>Accesorios</h1>
-        <input type="checkbox" name="accesorios" id="acc_1" value="cable ethernet">cable de ethernet<br>
-        <input type="checkbox" name="accesorios" id="acc_2" value="mando adicional">Mando adicional<br>
-        <input type="checkbox" name="accesorios" id="acc_3" value="cable HDMI"> cable HDMI<br>
-        <input type="checkbox" name="accesorios" id="acc_4" value="cable DP">Displayport<br>
-        <input type="checkbox" name="choose_all" onclick="marcarTodas()">Marcar todas
-        <hr>
-        
-        <h1>Extras</h1>
-        <input type="color" name="color_prod" id="id_color_prod"><label for="id_color_prod">Color del
-            producto</label><br>
-        <br>
-        <label for="id_precio">Precio del producto</label><input type="range" name="precio" id="id_precio" max="100"
-            min="10"><br>
-        <hr>
-        <h1>Datos de contacto del Proveedor</h1>
-        <br>
-        <label for="id_telf_devo">Telefono de contacto</label><input type="tel" name="telf_devo" id="id_telf_devo"><br>
-        <br>
-        <label for="id_semana_max_devo">Semana maxima para devolución</label><input type="week" name="semana_max_devo"
-            id="id_semana_max_devo"><br>
-        <br>
-        <label for="id_email_usu">Email del responsable del envío</label><input type="email" name="email_usu"
-            id="id_email_usu"><br>
-        <hr>
-        <button onclick="recogidaDatos()">Enviar</button>
+        </fieldset>
+        <fieldset>
+            <legend>Accesorios</legend>
+            <input type="checkbox" name="accesorios" id="acc_1" value="cable ethernet" />cable de ethernet<br />
+            <input type="checkbox" name="accesorios" id="acc_2" value="mando adicional" />Mando adicional<br />
+            <input type="checkbox" name="accesorios" id="acc_3" value="cable HDMI" />Cable HDMI<br />
+            <input type="checkbox" name="accesorios" id="acc_4" value="cable DP" />Displayport<br />
+            <input type="button" value="Marcar todas" onclick="marcarTodas()" />
+            <input type="button" value="Desmarcar todas" onclick="desmarcarTodas()" />
+        </fieldset>
+        <fieldset>
+            <legend>Extras</legend>
+            <input type="color" name="color_prod" id="id_color_prod" /><label for="id_color_prod">Color del
+                producto</label><br />
+            <br />
+            <label for="id_precio">Precio del producto</label>
+            <input type="range" name="precio" id="id_precio" max="100" min="10" step="0.01" oninput="cambioPrecio()" />
+            <input size="5" type="number" max="100" min="10" id="precio" oninput="precioSlider()" />€
+            <br />
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto del Proveedor</legend>
+            <br />
+            <label for="id_telf_devo">Telefono de contacto</label><input type="tel" name="telf_devo"
+                id="id_telf_devo" /><br />
+            <br />
+            <label for="id_semana_max_devo">Semana maxima para devolución</label><input type="week"
+                name="semana_max_devo" id="id_semana_max_devo" /><br />
+            <br />
+            <label for="id_email_usu">Email del responsable del envío</label><input type="email" name="email_usu"
+                id="id_email_usu" /><br />
+            <hr />
+            <input type="button" value="enviar" onclick="recogidaDatos()" />
+        </fieldset>
     </form>
-    <div id="solucion"></div>
 
+    <div id="solucion"></div>
 </body>
 <script src="JLL_ejercicios_formularios_1.js"></script>
 
