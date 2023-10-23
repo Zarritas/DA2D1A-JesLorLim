@@ -1,7 +1,6 @@
 import java.security.SecureRandom;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Locale;
 import java.util.function.Function;
 
 import static java.time.LocalDateTime.now;
@@ -13,10 +12,17 @@ public class Escritor implements Runnable{
     private String nombre;
     private Vector vector;
     private int inicial;
-    public Escritor(String nombre, Vector vector, int inicial) {
+    private static int turno=0;
+    private int numero;
+
+    private synchronized void cambiarTurno(){
+        turno = 1-numero;
+    }
+    public Escritor(String nombre, Vector vector, int inicial, int turno) {
         this.nombre = nombre;
         this.vector=vector;
         this.inicial=inicial;
+        this.numero = turno;
     }
 
 
@@ -27,20 +33,21 @@ public class Escritor implements Runnable{
         System.out.printf("Soy %s y voy a empezar a escribir en el vector compartido a las "+ ffh.apply(now())+"%n",nombre);
         for (int i = inicial; i < inicial+CANTIDAD; i++) {
             synchronized (vector){
-                int tiempo=s.nextInt(MAX_TIEMPO);
-                System.out.printf("Soy %s y voy a esperar %d ms a las "+ ffh.apply(now())+"%n",nombre,tiempo);
-                vector.agregarValor(i);
-                System.out.printf("Soy %s y he escrito un %d en el vector %s a las "+ ffh.apply(now())+"%n",nombre,i,vector);
-                vector.notify();
-                try {
-                    vector.wait(tiempo);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
+                int tiempo = s.nextInt(MAX_TIEMPO);
+                System.out.printf("Soy %s y voy a esperar %d ms a las " + ffh.apply(now()) + "%n", nombre, tiempo);
+//                vector.notify();
+                while(numero!=turno) {
+                    try {
+                        vector.wait(tiempo);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
                 }
+                vector.agregarValor(i);
+                System.out.printf("Soy %s y he escrito un %d en el vector %s a las " + ffh.apply(now()) + "%n", nombre, i, vector);
+                cambiarTurno();
             }
-
         }
-        System.out.println("Codigo terminado a las "+ffh.apply(now()));
     }
 
     @Override
