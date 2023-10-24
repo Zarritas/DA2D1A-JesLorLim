@@ -1,18 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jesús Lorenzo">
-    <title>Ejercicio 2</title>
+  <style>
+    .rectangulo {
+      width: 200px;
+      height: 100px;
+      position: relative;
+      margin: 100px;
+    }
+
+    #rectangulo1 {
+      background-color: green;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #rectangulo2 {
+      background-color: gray;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #rectangulo3 {
+      background-color: gray;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      resize: both;
+      overflow: auto;
+    }
+  </style>
 </head>
 
 <body>
-    
+  <div id="rectangulo1" class="rectangulo"></div>
+  <div id="rectangulo2" class="rectangulo"></div>
+  <div id="rectangulo3" class="rectangulo"></div>
+
 
 </body>
 <script>
+  //----Constantes-------------------------------------------------
+  const rectangulo1 = document.getElementById("rectangulo1");
+  const rectangulo2 = document.getElementById("rectangulo2");
+  const rectangulo3 = document.getElementById("rectangulo3");
+  const input = document.createElement("input");
+  const rectangulos = document.querySelectorAll(".rectangulo");
+
+  //----Funciones-----------------
+  window.onload = function () {
+    setTimeout(function () {
+      alert("Todo preparado, comienza a jugar!");
+      activarrectangulo1();
+    }, 2000);
+  };
+
+  function activarrectangulo1() {
+    rectangulo1.addEventListener("mousemove", function () {
+      rectangulo1.style.backgroundColor = "blue";
+    });
+    rectangulo1.addEventListener("mouseleave", function () {
+      rectangulo1.style.backgroundColor = "green";
+    });
+    rectangulo1.addEventListener("click", function () {
+      activarrectangulo2And3();
+    });
+  }
+
+  function activarrectangulo2And3() {
+    rectangulo2.onclick = function (event) {
+      showDialog(event.clientX, event.clientY);
+      rectangulo2.style.backgroundColor = "red";
+    };
+    rectangulo2.onmousedown = function () {
+      showTextInput();
+    };
+    rectangulo3.onresize = function () {
+      const contenido = document.getElementById("contenido")
+      contenido.write("Ancho: " + rectangulo3.offsetWidth + "px, Alto: " + rectangulo3.offsetHeight + "px");
+    };
+  }
+
+  function showDialog(x, y) {
+    const dialogText = "Has clicado en las cordenadas (" + x + ", " + y + ")";
+    window.alert(dialogText);
+  }
+
+  function showTextInput() {
+    input.type = "text";
+    document.body.appendChild(input);
+    input.disabled = true;
+
+    document.addEventListener("keydown", function (event) {
+      switch (event.key) {
+        case "S":
+          input.disabled = false;
+          input.focus();
+          break;
+        case "R":
+          resetPage();
+          break;
+        case "H":
+          hiderectangulo3();
+          break;
+        case "B":
+          showrectangulo3();
+          break;
+        case "Q":
+          closePage();
+          break;
+        default:
+          console.log("Key pressed: " + event.key);
+          break;
+      }
+    });
+  }
+
+  function resetPage() {
+    // Reset the page to its initial state (point 1)
+    rectangulos.forEach(rectangulo => {
+      rectangulos.style.backgroundColor = "gray";
+      rectangulos.onmousemove = null;
+      rectangulos.onclick = null;
+      rectangulos.onmouseout = null;
+      rectangulos.onresize = null;
+      rectangulo1.style.backgroundColor = "green";
+    });
+  }
+
+  function hiderectangulo3() {
+    if (confirm("Vas a borrar un rectángulo. ¿Estás seguro?")) {
+      rectangulo3.style.display = "none";
+    }
+  }
+
+  function showrectangulo3() {
+    if (confirm("¿Estás seguro de mostrar el rectángulo?")) {
+      rectangulo3.style.display = "block";
+    }
+  }
+
+  function closePage() {
+    // Display a farewell message
+    alert("¡Hasta luego!");
+    setTimeout(function () {
+      window.close();
+    }, 3000);
+  }
 
 </script>
 </html>
