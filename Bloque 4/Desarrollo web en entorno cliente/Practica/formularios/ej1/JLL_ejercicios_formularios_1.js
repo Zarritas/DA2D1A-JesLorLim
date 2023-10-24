@@ -51,6 +51,8 @@ function recogidaDatos() {
             document.getElementById("id_direccion").value = discTienda;
             document.getElementById("id_cPostal").value = cpTienda;
             break;
+        default:
+            break;
     }
     tienda = "Dirección de la tienda: "+discTienda+", "+cpTienda;
 
@@ -63,9 +65,10 @@ function recogidaDatos() {
         }
     }
     let color = 'Color del producto: <div style="background-color:' + document.getElementById("id_color_prod").value + '; width: 12px; height: 12px; display: inline-block"></div><br>';
+    let color2 = 'Color del producto: ' + document.getElementById("id_color_prod").value + "<br>";
     let precio = "Precio del producto: " + document.getElementById("id_precio").value + "€ <br>";
     let telef = "Telefono de contacto para devolución: " + document.getElementById("id_telf_devo").value + "<br>";
     let semana = "Semana de entrega: " + document.getElementById("id_semana_max_devo").value + "<br>";
     let email = "Email de contacto: " + document.getElementById("id_email_usu").value + "<br>";
-    document.getElementById("solucion").innerHTML = id_prod + nombre + descrip + pass + fecha + tipo + tienda + "<br>" + "Accesorios extra: " + arrayAccesorios + "<br>" + color + precio + telef + semana + email;
+    document.getElementById("solucion").innerHTML = id_prod + nombre + descrip + pass + fecha + tipo + tienda + "<br>" + "Accesorios extra: " + arrayAccesorios + "<br>" + color+color2 + precio + telef + semana + email;
 }
