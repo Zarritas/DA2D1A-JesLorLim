@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jesús Lorenzo">
+    <title>Ejercicio 1</title>
+</head>
+
+<body id="body">
+    <div id="cursor" style="width: 100%; height: 100%;"></div>
+
+    <hr>
+
+    <input type="button" value="comenzar saludos">
+    <input type="button" value="">
+</body>
+
+<script>
+    document.onmousemove = raton;
+    function raton() {
+        document.getElementById("cursor").innerText = event.clientX + " , " + event.clientY
+    }
+    let estado = -1;
+
+    function comenzar(){
+        
+    }
+</script>
+
+</html>
