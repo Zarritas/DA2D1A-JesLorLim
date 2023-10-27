@@ -9,24 +9,43 @@
 </head>
 
 <body id="body">
+    <hr>
+
     <div id="cursor" style="width: 100%; height: 100%;"></div>
 
     <hr>
 
-    <input type="button" value="comenzar saludos">
-    <input type="button" value="">
+    <div id="ventanaModal" style="border: 2px; border-color: black; padding: 5px;"></div>
+    <input type="button" id="comenzar" value="Comenzar Saludos">
+    <input type="button" id="parar" value="Parar Saludos">
+
+    <hr>
 </body>
 
 <script>
+//---Ej1----------------------------------------------------------------------------------------------
+
     document.onmousemove = raton;
     function raton() {
         document.getElementById("cursor").innerText = event.clientX + " , " + event.clientY
     }
-    let estado = -1;
+//---Ej2----------------------------------------------------------------------------------------------
+    let miIntervalo;
+    const comenzar = document.getElementById("comenzar");
 
-    function comenzar(){
-        
+    comenzar.addEventListener("click",() => {
+        miIntervalo = setInterval(()=> {
+            document.getElementById("ventanaModal").innerText += "hola \n";
+        }, 5000)
     }
+    );
+    const parar = document.getElementById("parar");
+    parar.addEventListener("click", () => {
+        clearInterval(miIntervalo);
+        document.getElementById("ventanaModal").innerText = "";
+    });
+//---Ej3----------------------------------------------------------------------------------------------
+    
 </script>
 
 </html>
