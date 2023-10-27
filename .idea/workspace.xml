@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/Interbloqueo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Deathlock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Vector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/SimpleArray/src/Escritor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/SimpleArray/src/Escritor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/SimpleArray/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/SimpleArray/src/Principal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +59,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Diurno/Desktop/DA2D1A-JesLorLim/Bloque 3/Programacion de servicios y procesos/Practica/SimpleArray",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Diurno/Desktop/DA2D1A-JesLorLim/Bloque 3/Programacion de servicios y procesos/Practica/SimpleArray&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Diurno\Desktop\DA2D1A-JesLorLim\Bloque 3\Programacion de servicios y procesos\Practica\Camareros\.idea" />
@@ -94,7 +102,8 @@
       <workItem from="1697442746169" duration="32000" />
       <workItem from="1697443154622" duration="472000" />
       <workItem from="1697776822587" duration="1284000" />
-      <workItem from="1698035468141" duration="1355000" />
+      <workItem from="1698035468141" duration="1356000" />
+      <workItem from="1698381483386" duration="3529000" />
     </task>
     <servers />
   </component>
