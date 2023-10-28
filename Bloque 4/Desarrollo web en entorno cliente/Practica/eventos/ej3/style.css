@@ -4,3 +4,7 @@
 	position: absolute;
     background-color: red;
 }
+header div{
+    display: inline;
+    margin: 0px;
+}
