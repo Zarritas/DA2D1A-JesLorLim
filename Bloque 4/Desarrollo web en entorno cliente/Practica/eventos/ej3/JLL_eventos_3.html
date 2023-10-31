@@ -12,24 +12,165 @@
 
     <link rel='stylesheet' type='text/css' href='style.css'>
 
-    <script src='main.js'></script>
+
 
 </head>
 
 <body>
     <header>
-        <div class="head" id="div_form"><input type="radio" name="opciones" id="form" value="formulario">formulario</div>
-        <div class="head" id="div_semaforo"><input type="radio" name="opciones" id="sem" value="semaforo">semaforo</div>
-        <div class="head" id="div_cronometro"><input type="radio" name="opciones" id="crono" value="cronometro">cronometro</div></header>
+        <div class="head" id="div_form">
+            <input type="radio" name="opciones" id="form" value="formulario" onclick="verFormulario()">
+            Formulario
+        </div>
+        <div class="head" id="div_semaforo">
+            <input type="radio" name="opciones" id="sem" value="semaforo" onclick="verSemaforo()">
+            Semaforo
+        </div>
+        <div class="head" id="div_cronometro">
+            <input type="radio" name="opciones" id="crono" value="cronometro" onclick="verCronometro()">
+            Cronometro
+        </div>
+    </header>
+
     <div id="formulario" class="opcion">
         <div id="head">
-            <div class="formulario"><input type="radio" name="opciones" id="check" value="check">check</div>
-            <div class="formulario"><input type="radio" name="opciones" id="select" value="select">select</div>
-            <div class="formulario"><input type="radio" name="opciones" id="list" value="list">list</div>
+
+            <div class="formulario">
+                <input id="check" 
+                        type="radio" 
+                        name="opciones"
+                        value="check"
+                />
+                Check
+            </div>
+
+            <div class="formulario">
+                <input id="select" 
+                        type="radio" 
+                        name="opciones" 
+                        value="select"
+                    
+                />
+                Select
+            </div>
+
+            <div class="formulario">
+                <input id="list"
+                        type="radio"
+                        name="opciones"
+                        value="list"
+                />
+                List
+            </div>
+
         </div>
-        <div id="div_check"></div>
-        <div id="div_select"></div>
-        <div id="div_list"></div>
+
+        <div id="div_check">
+            <input id="vj_1"
+                    type="checkbox" 
+                    name="videojuegos"  
+                    value="ds1"
+            />
+            <label id="lab_vj1"
+                    for="vj_1"
+            >
+                Dark Souls 1
+            </label>
+
+            <input id="vj_2"
+                    type="checkbox" 
+                    name="videojuegos"  
+                    value="ds2"
+            />
+            <label id="lab_vj2"
+                    for="vj_2"
+            >
+                Dark Souls 2
+            </label>
+
+            <input id="vj_3"
+                    type="checkbox" 
+                    name="videojuegos" 
+                    value="ds3"
+                    
+            />
+            <label id="lab_vj3"
+                    for="vj_3"
+            >
+                Dark Souls 3
+            </label>
+
+            <input id="vj_4" 
+                    type="checkbox" 
+                    name="videojuegos" 
+                    value="eldenring"
+            />
+            <label id="lab_vj4"
+                    for="vj_4"
+            >
+                Elden Ring
+            </label>
+
+            <input id="vj_5" 
+                    type="checkbox" 
+                    name="videojuegos" 
+                    value="sekiro"
+            />
+            <label id="lab_vj5"
+                    for="vj_5"
+            >
+                Sekiro: Shadow Die Twice
+            </label>
+
+            <input id="vj_6" 
+                    type="checkbox" 
+                    name="videojuegos" 
+                    value="shrek2"
+            >
+            <label id="lab_vj6"
+                    for="vj_6"
+            >
+                Shrek 2
+            </label>
+
+        </div>
+
+        <div id="div_select">
+            <select id="select_comida"
+                    name="comida"
+            >
+                <option 
+                        value="NS" 
+                        selected="selected"
+                >
+                    Nada seleccionado
+                </option>
+                <option 
+                        value="albaricoques"
+                >
+                    Albaricoques
+                </option>
+                <option 
+                        value="pomelos"
+                >
+                    Pomelos
+                </option>
+                <option 
+                        value="platanos"
+                >
+                    Platanos
+                </option>
+                <option 
+                        value="piña"
+                >
+                    Piña
+                </option>
+            </select>
+        </div>
+
+        <div id="div_list">
+
+        </div>
     </div>
 
     <div id="semaforo" class="opcion">
@@ -37,9 +178,10 @@
     </div>
 
     <div id="cronometro" class="opcion">
-
+        patata
     </div>
 
 </body>
+<script src='main.js'></script>
 
 </html>
