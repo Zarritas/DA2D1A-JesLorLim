@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/ej3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/JLL_eventos_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/JLL_eventos_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,14 +70,14 @@
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/alumno/Escritorio/prestamos",
+    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "project.propCompiler",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -98,6 +108,7 @@
       <workItem from="1698035468141" duration="1356000" />
       <workItem from="1698381483386" duration="3529000" />
       <workItem from="1698746777995" duration="32000" />
+      <workItem from="1698764494004" duration="783000" />
     </task>
     <servers />
   </component>

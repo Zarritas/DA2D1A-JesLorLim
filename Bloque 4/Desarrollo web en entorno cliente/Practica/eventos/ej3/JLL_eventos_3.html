@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
 
@@ -12,60 +12,101 @@
 
     <link rel='stylesheet' type='text/css' href='style.css'>
 
-
-
 </head>
 
 <body>
-    <header>
-        <div class="head" id="div_form">
-            <input type="radio" name="opciones" id="form" value="formulario" onclick="verFormulario()">
-            Formulario
+    <header id="header">
+
+        <div id="div_form"
+                class="head"
+        >
+            <input id="form"
+                   type="radio"
+                    name="opciones"
+                    value="formulario"
+            />
+            <label for="form">Formulario</label>
         </div>
-        <div class="head" id="div_semaforo">
-            <input type="radio" name="opciones" id="sem" value="semaforo" onclick="verSemaforo()">
-            Semaforo
+
+        <div id="div_semaforo"
+                class="head"
+        >
+            <input id="sem"
+                   type="radio"
+                    name="opciones"
+                    value="semaforo"
+            />
+            <label for="sem">Semaforo</label>
         </div>
-        <div class="head" id="div_cronometro">
-            <input type="radio" name="opciones" id="crono" value="cronometro" onclick="verCronometro()">
-            Cronometro
+
+        <div id="div_cronometro"
+                class="head"
+        >
+            <input id="crono"
+                    type="radio"
+                    name="opciones"
+                    value="cronometro"
+            />
+            <label for="crono">Cronometro</label>
         </div>
+
     </header>
 
-    <div id="formulario" class="opcion">
+    <div id="formulario"
+            class="opcion"
+    >
+
         <div id="head">
 
             <div class="formulario">
-                <input id="check" 
+
+                <input id="check_form"
                         type="radio" 
-                        name="opciones"
+                        name="opciones_form"
                         value="check"
                 />
-                Check
+                <label id="lab_check"
+                        for="check_form">
+                    Check
+                </label>
+
             </div>
 
             <div class="formulario">
-                <input id="select" 
+
+                <input id="select_form"
                         type="radio" 
-                        name="opciones" 
+                        name="opciones_form"
                         value="select"
                     
                 />
-                Select
+                <label id="lab_select"
+                        for="select_form">
+                    Select
+                </label>
+
             </div>
 
             <div class="formulario">
-                <input id="list"
+
+                <input id="list_form"
                         type="radio"
-                        name="opciones"
+                        name="opciones_form"
                         value="list"
                 />
-                List
+                <label id="lab_list"
+                        for="list_form"
+                >
+                    List
+                </label>
+
             </div>
 
         </div>
 
-        <div id="div_check">
+        <div id="div_check"
+            class="body_form"
+        >
             <input id="vj_1"
                     type="checkbox" 
                     name="videojuegos"  
@@ -77,6 +118,8 @@
                 Dark Souls 1
             </label>
 
+            <br />
+
             <input id="vj_2"
                     type="checkbox" 
                     name="videojuegos"  
@@ -87,6 +130,8 @@
             >
                 Dark Souls 2
             </label>
+
+            <br />
 
             <input id="vj_3"
                     type="checkbox" 
@@ -100,6 +145,8 @@
                 Dark Souls 3
             </label>
 
+            <br />
+
             <input id="vj_4" 
                     type="checkbox" 
                     name="videojuegos" 
@@ -111,6 +158,8 @@
                 Elden Ring
             </label>
 
+            <br />
+
             <input id="vj_5" 
                     type="checkbox" 
                     name="videojuegos" 
@@ -121,6 +170,8 @@
             >
                 Sekiro: Shadow Die Twice
             </label>
+
+            <br />
 
             <input id="vj_6" 
                     type="checkbox" 
@@ -135,9 +186,18 @@
 
         </div>
 
-        <div id="div_select">
+        <div id="div_select"
+                class="body_form"
+        >
+
+            <label id="lab_select_comida"
+                        for="select_comida"
+            >
+                Selecciona una comida
+            </label>
             <select id="select_comida"
-                    name="comida"
+                        name="comida"
+                    onchange="actualizarResultadoSelect()"
             >
                 <option 
                         value="NS" 
@@ -168,17 +228,60 @@
             </select>
         </div>
 
-        <div id="div_list">
+        <div id="div_list"
+                class="body_form"
+        >
+
+            <div id="nombre_1"
+                 class="nombres"
+            >
+                Juan Carlos
+            </div>
+
+            <div id="nombre_2"
+                 class="nombres"
+            >
+                Antonio José
+            </div>
+
+            <div id="nombre_3"
+                 class="nombres"
+            >
+                Juan Alberto
+            </div>
+
+            <div id="nombre_4"
+                 class="nombres"
+            >
+                Jorge Javier
+            </div>
 
         </div>
+
+        <div id="resultado"></div>
+
     </div>
 
-    <div id="semaforo" class="opcion">
+    <div id="semaforo"
+            class="opcion"
+    >
+
+        <div id="rojo" class="semaforo"></div>
+
+        <div id="amarillo" class="semaforo"></div>
+
+        <div id="verde" class="semaforo"></div>
+
+        <div id="espera" class="botones_semaforo"> Espere Verde</div>
+
+        <div id="pulse_peaton" class="botones_semaforo">Pulse peatón</div>
 
     </div>
 
-    <div id="cronometro" class="opcion">
-        patata
+    <div id="cronometro"
+            class="opcion"
+    >
+
     </div>
 
 </body>

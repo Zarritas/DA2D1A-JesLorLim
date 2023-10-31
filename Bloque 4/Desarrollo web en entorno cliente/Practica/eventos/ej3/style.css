@@ -1,10 +1,64 @@
-.opcion{
-    width: 90%;
-	height: 90%;
-	position: absolute;
-    background-color: red;
+html,body{
+    font-size: x-large;
 }
+
+/*cabecera*/
 header div{
-    display: inline;
-    margin: 0px;
+    display: inline-block;
+    margin: 0;
+    width: 33.07%;
+    min-height: 30px;
+    text-align: center;
+    font-size: x-large;
 }
+
+/*formulario*/
+.opcion{
+    width: 99%;
+	height: 95%;
+	position: absolute;
+}
+.opcion{
+    display: none;
+}
+.head label:hover{
+    font-weight: bolder;
+}
+.head input{
+    display: none;
+}
+#resultado{
+    position: fixed;
+    bottom: 10%;
+    width: 60%;
+    display: flex;
+    margin-left: 30%;
+}
+#head .formulario{
+    display: inline-block;
+}
+.body_form{
+    display: none;
+}
+
+/*semaforo*/
+.botones_semaforo{
+    display: flex;
+    margin-left: 10%;
+    margin-top: 1%;
+    position: relative;
+    padding: 2%;
+    width: 200px;
+    border: black 10px solid;
+    text-align: center;
+
+}
+.botones_semaforo:hover{
+    background-color: green;
+    box-shadow: 5px 5px 38px 5px #000000;
+}
+#espera{
+    margin-top: 10%;
+}
+
+/*cronometro*/
