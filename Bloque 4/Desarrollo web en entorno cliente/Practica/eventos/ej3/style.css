@@ -45,20 +45,66 @@ header div{
 .botones_semaforo{
     display: flex;
     margin-left: 10%;
-    margin-top: 1%;
-    position: relative;
+    margin-top: 20%;
+    position: fixed;
     padding: 2%;
     width: 200px;
-    border: black 10px solid;
+    border: black 5px solid;
     text-align: center;
-
 }
-.botones_semaforo:hover{
-    background-color: green;
+#pulse_peaton{
     box-shadow: 5px 5px 38px 5px #000000;
+    z-index: 1;
 }
 #espera{
     margin-top: 10%;
 }
+.semaforo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: 900px;
+}
+#rojo{
+    margin-top: 30px;
+    background-color: #400000
+}
+#amarillo{
+    margin-top: 10%;
+    background-color: #404000
+}
+#verde{
+    margin-top: 18%;
+    background-color: #00ff00
+}
 
 /*cronometro*/
+#cronometro_tiempo{
+    margin-left: 39%;
+    margin-top: 10%;
+}
+#cronometro_control{
+    margin-left: 35%;
+    margin-top: 2%;
+}
+.cronometro_tiempo, .cronometro_control{
+    display: inline;
+    margin: 0;
+}
+.cronometro_tiempo{
+    font-size: 80px;
+}
+.cronometro_control{
+    padding: 10px;
+    border: black 2px solid;
+    border-radius: 10%;
+}
+/*Otros*/
+.texto{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select:none;
+    z-index: 2;
+}
