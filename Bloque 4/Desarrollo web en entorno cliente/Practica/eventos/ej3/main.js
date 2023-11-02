@@ -262,10 +262,3 @@ document.addEventListener("click",(evento)=>{
         cronometroFuncional();
     }
 })
-
-
-
-
-
-
-
