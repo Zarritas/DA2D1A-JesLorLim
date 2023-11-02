@@ -169,6 +169,10 @@ function actualizarTiempos(tiempo,elemento){
     else {elemento.innerText = tiempo.toString();}
 }
 function playCronometro() {
+    actualizarTiempos(miliseg,MILISEGUNDOS);
+    actualizarTiempos(seg,SEGUNDOS);
+    actualizarTiempos(min,MINUTOS);
+    actualizarTiempos(hora,HORAS);
     intervaloCrono = setInterval(function (){
         miliseg++;
         actualizarTiempos(miliseg,MILISEGUNDOS);
