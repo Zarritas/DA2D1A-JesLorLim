@@ -35,6 +35,7 @@ let miliseg = 0;
 let seg = 0;
 let min = 0;
 let hora = 0;
+let cronomtroEnMarcha = false
 // Funciones
 // Funciones Cabecera
 function mostrarElemento(elemento, color,head) {
@@ -169,31 +170,36 @@ function actualizarTiempos(tiempo,elemento){
     else {elemento.innerText = tiempo.toString();}
 }
 function playCronometro() {
-    actualizarTiempos(miliseg,MILISEGUNDOS);
-    actualizarTiempos(seg,SEGUNDOS);
-    actualizarTiempos(min,MINUTOS);
-    actualizarTiempos(hora,HORAS);
-    intervaloCrono = setInterval(function (){
-        miliseg++;
+    if(!cronomtroEnMarcha){
+        cronomtroEnMarcha = true;
         actualizarTiempos(miliseg,MILISEGUNDOS);
-        if (miliseg>=100){
-            miliseg=0;
-            seg++;
-            actualizarTiempos(seg,SEGUNDOS);
-            if (seg>=60){
-                seg=0;
-                min++;
-                actualizarTiempos(min,MINUTOS);
-                if (min >=60){
-                    min=0;
-                    hora++;
-                    actualizarTiempos(hora,HORAS);
+        actualizarTiempos(seg,SEGUNDOS);
+        actualizarTiempos(min,MINUTOS);
+        actualizarTiempos(hora,HORAS);
+        intervaloCrono = setInterval(function (){
+            miliseg++;
+            actualizarTiempos(miliseg,MILISEGUNDOS);
+            if (miliseg>=100){
+                miliseg=0;
+                seg++;
+                actualizarTiempos(seg,SEGUNDOS);
+                if (seg>=60){
+                    seg=0;
+                    min++;
+                    actualizarTiempos(min,MINUTOS);
+                    if (min >=60){
+                        min=0;
+                        hora++;
+                        actualizarTiempos(hora,HORAS);
+                    }
                 }
             }
-        }
-    },1)
+        },1);
+    }
+
 }
 function rebobinarCronometro() {
+    cronomtroEnMarcha=false;
     clearInterval(intervaloCrono);
     if(miliseg !== 0 || seg !== 0 || min !== 0 || hora !== 0) {
         intervaloCrono = setInterval(function () {
@@ -212,9 +218,10 @@ function rebobinarCronometro() {
             }
         }, 1)
     }
-}
+    }
 function pauseCronometro(){
     clearInterval(intervaloCrono);
+    cronomtroEnMarcha=false;
 }
 function stopCronometro(){
     clearInterval(intervaloCrono);
@@ -222,6 +229,7 @@ function stopCronometro(){
     seg=0;
     min=0;
     hora=0;
+    cronomtroEnMarcha=false;
 }
 function resetCronometro() {
     clearInterval(intervaloCrono);
@@ -233,6 +241,7 @@ function resetCronometro() {
     actualizarTiempos(min,MINUTOS);
     hora=0;
     actualizarTiempos(hora,HORAS);
+    cronomtroEnMarcha=false;
 }
 function cronometroFuncional(){
     PLAY.addEventListener("click", playCronometro)
