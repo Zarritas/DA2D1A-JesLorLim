@@ -1,25 +1,25 @@
-// Constantes
-// Constantes Cabecera
+// Constantes y variables
+// Constantes y variables Cabecera
 const FORMULARIO = document.getElementById("formulario");
 const SEMAFORO = document.getElementById("semaforo");
 const CRONOMETRO = document.getElementById("cronometro");
 const HEAD_FORMULARIO = document.getElementById("div_form");
 const HEAD_SEMAFORO = document.getElementById("div_semaforo");
 const HEAD_CRONOMETRO = document.getElementById("div_cronometro");
-// Constantes Formulario
+// Constantes y variables Formulario
 const Check = document.getElementById("div_check");
 const SELECT = document.getElementById("div_select");
 const LIST = document.getElementById("div_list");
 const CHECKBOX_FORM = document.querySelectorAll("input[name='videojuegos']");
 const RESULTADO_FORM = document.getElementById("resultado");
-// Constantes Semaforo
+// Constantes y variables Semaforo
 const LUZ_ROJA = document.getElementById("rojo");
 const LUZ_AMARILLA = document.getElementById("amarillo");
 const LUZ_VERDE = document.getElementById("verde");
 const BOTON_PULSAR = document.getElementById("pulse_peaton");
 const BOTON_ESPERAR = document.getElementById("espera");
-let intervalRef;
-// Constantes Cronometro
+let intervaloParpadeo;
+// Constantes y variables Cronometro
 const MILISEGUNDOS = document.getElementById("milisegundos");
 const SEGUNDOS = document.getElementById("segundos");
 const MINUTOS = document.getElementById("minutos");
@@ -30,6 +30,11 @@ const STOP = document.getElementById("stop");
 const RESET = document.getElementById("reset");
 const FWD = document.getElementById("fwd");
 const REW = document.getElementById("rew");
+let intervaloCrono;
+let miliseg = 0;
+let seg = 0;
+let min = 0;
+let hora = 0;
 // Funciones
 // Funciones Cabecera
 function mostrarElemento(elemento, color,head) {
@@ -57,7 +62,6 @@ function verCronometro() {
     mostrarElemento(CRONOMETRO,"lightblue",HEAD_CRONOMETRO);
     ocultarElemento(FORMULARIO,HEAD_FORMULARIO)
     ocultarElemento(SEMAFORO,HEAD_SEMAFORO)
-
 }
 // Funciones Formulario
 function verCheckFormulario(){
@@ -141,14 +145,14 @@ function luzVerde(){
 }
 function parpadeo(){
     let bgcolor = "#aaaa00"
-    intervalRef = setInterval(function (){
+    intervaloParpadeo = setInterval(function (){
         bgcolor = (bgcolor==="lightgrey")? "#aaaa00":"lightgrey"
         BOTON_PULSAR.style.backgroundColor= bgcolor;
     },500)
 }
 function semaforo(){
     BOTON_PULSAR.style.backgroundColor = "";
-    clearInterval(intervalRef);
+    clearInterval(intervaloParpadeo);
     BOTON_ESPERAR.style.backgroundColor = "#aaaa00";
     setTimeout(luzAmarilla,10000);
     setTimeout(luzRoja,12000);
@@ -160,31 +164,97 @@ function semaforo(){
     },20000)
 }
 // Funciones Cronometro
-function playCronometro(){
-
+function actualizarTiempos(tiempo,elemento){
+    if(tiempo<10){elemento.innerText = "0"+tiempo;}
+    else {elemento.innerText = tiempo.toString();}
+}
+function playCronometro() {
+    intervaloCrono = setInterval(function (){
+        miliseg++;
+        actualizarTiempos(miliseg,MILISEGUNDOS);
+        if (miliseg>=100){
+            miliseg=0;
+            seg++;
+            actualizarTiempos(seg,SEGUNDOS);
+            if (seg>=60){
+                seg=0;
+                min++;
+                actualizarTiempos(min,MINUTOS);
+                if (min >=60){
+                    min=0;
+                    hora++;
+                    actualizarTiempos(hora,HORAS);
+                }
+            }
+        }
+    },1)
+}
+function rebobinarCronometro() {
+    clearInterval(intervaloCrono);
+    if(miliseg !== 0 || seg !== 0 || min !== 0 || hora !== 0) {
+        intervaloCrono = setInterval(function () {
+            if (hora !== 0){
+                hora--;
+                actualizarTiempos(hora, HORAS);
+            }else if (min !== 0) {
+                min--;
+                actualizarTiempos(min, MINUTOS);
+            }else if (seg !== 0) {
+                seg--;
+                actualizarTiempos(seg, SEGUNDOS);
+            }else if (miliseg !== 0){
+                miliseg--;
+                actualizarTiempos(miliseg, MILISEGUNDOS);
+            }
+        }, 1)
+    }
 }
 function pauseCronometro(){
-
+    clearInterval(intervaloCrono);
+}
+function stopCronometro(){
+    clearInterval(intervaloCrono);
+    miliseg=0;
+    seg=0;
+    min=0;
+    hora=0;
+}
+function resetCronometro() {
+    clearInterval(intervaloCrono);
+    miliseg=0;
+    actualizarTiempos(miliseg,MILISEGUNDOS);
+    seg=0;
+    actualizarTiempos(seg,SEGUNDOS);
+    min=0;
+    actualizarTiempos(min,MINUTOS);
+    hora=0;
+    actualizarTiempos(hora,HORAS);
 }
 function cronometroFuncional(){
     PLAY.addEventListener("click", playCronometro)
     PAUSE.addEventListener("click", pauseCronometro)
+    STOP.addEventListener("click", stopCronometro)
+    RESET.addEventListener("click", resetCronometro)
+    FWD.addEventListener("mousedown", playCronometro)
+    FWD.addEventListener("mouseup", pauseCronometro)
+    REW.addEventListener("mousedown", rebobinarCronometro)
+    REW.addEventListener("mouseup", pauseCronometro)
 }
 // Eventos
 CHECKBOX_FORM.forEach(checkbox=>{
     checkbox.addEventListener("change",actualizarResultadoCheckbox);
 })
 document.addEventListener("click",(evento)=>{
-    if(evento.target.name === "opciones"){
+    if(evento.target.name==="opciones"){
         radioGeneral(evento);
     }
-    if (evento.target.name === "opciones_form"){
+    if (evento.target.name==="opciones_form"){
         radioformulario(evento);
     }
-    if (evento.target.id ==="pulse_peaton"){
+    if (evento.target.id==="pulse_peaton"){
         semaforo();
     }
-    if (evento.target.id ==="crono"){
+    if (evento.target.id==="crono"){
         cronometroFuncional();
     }
 })

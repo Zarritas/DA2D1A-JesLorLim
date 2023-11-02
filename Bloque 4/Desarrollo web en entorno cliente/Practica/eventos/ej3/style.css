@@ -81,7 +81,7 @@ header div{
 
 /*cronometro*/
 #cronometro_tiempo{
-    margin-left: 39%;
+    margin-left: 36%;
     margin-top: 10%;
 }
 #cronometro_control{
@@ -101,10 +101,10 @@ header div{
     border-radius: 10%;
 }
 /*Otros*/
-.texto{
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select:none;
-    user-select:none;
-    z-index: 2;
-}
+/*.texto{*/
+/*    -webkit-user-select: none;*/
+/*    -moz-user-select: none;*/
+/*    -ms-user-select:none;*/
+/*    user-select:none;*/
+/*    z-index: 2;*/
+/*}*/
