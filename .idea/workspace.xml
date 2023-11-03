@@ -5,17 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/ej3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/Ej-Baul-productor.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Baul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Consumidor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Productor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/JLL_eventos_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/JLL_eventos_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +72,7 @@
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3",
+    "last_opened_file_path": "C:/Users/Diurno/Desktop/DA2D1A-JesLorLim",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,6 +111,7 @@
       <workItem from="1698381483386" duration="3529000" />
       <workItem from="1698746777995" duration="32000" />
       <workItem from="1698764494004" duration="783000" />
+      <workItem from="1698997916409" duration="2832000" />
     </task>
     <servers />
   </component>
