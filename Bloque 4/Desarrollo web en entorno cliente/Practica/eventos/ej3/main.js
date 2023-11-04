@@ -19,6 +19,7 @@ const LUZ_VERDE = document.getElementById("verde");
 const BOTON_PULSAR = document.getElementById("pulse_peaton");
 const BOTON_ESPERAR = document.getElementById("espera");
 let intervaloParpadeo;
+let semaforoEnMarcha=false;
 // Constantes y variables Cronometro
 const MILISEGUNDOS = document.getElementById("milisegundos");
 const SEGUNDOS = document.getElementById("segundos");
@@ -35,7 +36,7 @@ let miliseg = 0;
 let seg = 0;
 let min = 0;
 let hora = 0;
-let cronomtroEnMarcha = false
+let cronomtroEnMarcha = false;
 // Funciones
 // Funciones Cabecera
 function mostrarElemento(elemento, color,head) {
@@ -152,17 +153,21 @@ function parpadeo(){
     },500)
 }
 function semaforo(){
-    BOTON_PULSAR.style.backgroundColor = "";
-    clearInterval(intervaloParpadeo);
-    BOTON_ESPERAR.style.backgroundColor = "#aaaa00";
-    setTimeout(luzAmarilla,10000);
-    setTimeout(luzRoja,12000);
-    setTimeout(luzAmarilla,19000);
-    setTimeout(luzVerde,20000);
-    setTimeout(function () {
-        parpadeo();
-        BOTON_ESPERAR.style.backgroundColor = "";
-    },20000)
+    if(!semaforoEnMarcha){
+        semaforoEnMarcha=true;
+        BOTON_PULSAR.style.backgroundColor = "";
+        clearInterval(intervaloParpadeo);
+        BOTON_ESPERAR.style.backgroundColor = "#aaaa00";
+        setTimeout(luzAmarilla,10000);
+        setTimeout(luzRoja,12000);
+        setTimeout(luzAmarilla,19000);
+        setTimeout(luzVerde,20000);
+        setTimeout(function () {
+            parpadeo();
+            BOTON_ESPERAR.style.backgroundColor = "";
+            semaforoEnMarcha=false;
+        },20000)
+    }
 }
 // Funciones Cronometro
 function actualizarTiempos(tiempo,elemento){
@@ -179,15 +184,15 @@ function playCronometro() {
         intervaloCrono = setInterval(function (){
             miliseg++;
             actualizarTiempos(miliseg,MILISEGUNDOS);
-            if (miliseg>=100){
+            if (miliseg>99){
                 miliseg=0;
                 seg++;
                 actualizarTiempos(seg,SEGUNDOS);
-                if (seg>=60){
+                if (seg>59){
                     seg=0;
                     min++;
                     actualizarTiempos(min,MINUTOS);
-                    if (min >=60){
+                    if (min >59){
                         min=0;
                         hora++;
                         actualizarTiempos(hora,HORAS);
@@ -199,26 +204,32 @@ function playCronometro() {
 
 }
 function rebobinarCronometro() {
-    cronomtroEnMarcha=false;
     clearInterval(intervaloCrono);
-    if(miliseg !== 0 || seg !== 0 || min !== 0 || hora !== 0) {
+    cronometroEnMarcha = false;
+    if (miliseg > 0 || seg > 0 || min > 0 || hora > 0) {
         intervaloCrono = setInterval(function () {
-            if (hora !== 0){
-                hora--;
-                actualizarTiempos(hora, HORAS);
-            }else if (min !== 0) {
-                min--;
-                actualizarTiempos(min, MINUTOS);
-            }else if (seg !== 0) {
-                seg--;
-                actualizarTiempos(seg, SEGUNDOS);
-            }else if (miliseg !== 0){
+            if(miliseg>0){
                 miliseg--;
-                actualizarTiempos(miliseg, MILISEGUNDOS);
+                    actualizarTiempos(miliseg, MILISEGUNDOS);
+                if (miliseg < 0) {
+                    miliseg = 99;
+                    seg--;
+                    actualizarTiempos(seg, SEGUNDOS);
+                    if (seg < 0) {
+                        seg = 59;
+                        min--;
+                        actualizarTiempos(min, MINUTOS);
+                    if (min < 0) {
+                            min = 59;
+                            hora--;
+                            actualizarTiempos(hora, HORAS);
+                        }
+                    }
+                }
             }
-        }, 1)
+        }, 1);
     }
-    }
+}
 function pauseCronometro(){
     clearInterval(intervaloCrono);
     cronomtroEnMarcha=false;
@@ -266,6 +277,7 @@ document.addEventListener("click",(evento)=>{
     }
     if (evento.target.id==="pulse_peaton"){
         semaforo();
+
     }
     if (evento.target.id==="crono"){
         cronometroFuncional();
