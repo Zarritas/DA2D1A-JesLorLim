@@ -65,6 +65,23 @@ function verCronometro() {
     ocultarElemento(FORMULARIO,HEAD_FORMULARIO)
     ocultarElemento(SEMAFORO,HEAD_SEMAFORO)
 }
+function radioGeneral(evento) {
+    switch(evento.target.value){
+        case "formulario":
+            verFormulario()
+            break;
+
+        case "semaforo":
+            verSemaforo()
+            break;
+
+        case "cronometro":
+            verCronometro()
+            break;
+        default:
+            break;
+    }
+}
 // Funciones Formulario
 function verCheckFormulario(){
     Check.style.display="block";
@@ -83,23 +100,6 @@ function verListaFormulario(){
     SELECT.style.display="none";
     LIST.style.display="block";
     RESULTADO_FORM.textContent = "";
-}
-function radioGeneral(evento) {
-    switch(evento.target.value){
-        case "formulario":
-            verFormulario()
-            break;
-
-        case "semaforo":
-            verSemaforo()
-            break;
-
-        case "cronometro":
-            verCronometro()
-            break;
-        default:
-            break;
-    }
 }
 function radioformulario(evento) {
     switch (evento.target.value){
@@ -205,12 +205,12 @@ function playCronometro() {
 }
 function rebobinarCronometro() {
     clearInterval(intervaloCrono);
-    cronometroEnMarcha = false;
+    cronomtroEnMarcha = false;
     if (miliseg > 0 || seg > 0 || min > 0 || hora > 0) {
         intervaloCrono = setInterval(function () {
-            if(miliseg>0){
+            if(miliseg>0 || seg >0 || min > 0 || hora > 0){
                 miliseg--;
-                    actualizarTiempos(miliseg, MILISEGUNDOS);
+                actualizarTiempos(miliseg, MILISEGUNDOS);
                 if (miliseg < 0) {
                     miliseg = 99;
                     seg--;
@@ -219,7 +219,7 @@ function rebobinarCronometro() {
                         seg = 59;
                         min--;
                         actualizarTiempos(min, MINUTOS);
-                    if (min < 0) {
+                        if (min < 0) {
                             min = 59;
                             hora--;
                             actualizarTiempos(hora, HORAS);

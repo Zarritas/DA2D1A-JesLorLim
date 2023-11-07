@@ -4,9 +4,6 @@ const NOMBRE = document.getElementById("coln");
 const APELLIDO = document.getElementById("cola");
 const DIRECCION = document.getElementById("cold");
 const TODAS = document.getElementById("colt");
-
-
-
 function crearObjetosDirecciones() {
     let datosGrupales = listaDirecciones.split('\n');
 
@@ -20,7 +17,6 @@ function crearObjetosDirecciones() {
     }
     console.log(listaregistros);
 }
-
 function listarNombres() {
     vaciarLienzo();
     for(let i in listaregistros){
@@ -29,7 +25,6 @@ function listarNombres() {
         }
     }
 }
-
 function listarApellidos() {
     vaciarLienzo();
     for(let i in listaregistros){
@@ -38,7 +33,6 @@ function listarApellidos() {
         }
     }
 }
-
 function listarDirecciones() {
     vaciarLienzo();
     for(let i in listaregistros){
@@ -47,7 +41,6 @@ function listarDirecciones() {
         }
     }
 }
-
 function listarTodo() {
     vaciarLienzo();
     for(let i in listaregistros){
@@ -57,7 +50,6 @@ function listarTodo() {
 function vaciarLienzo() {
     LIENZO.innerHTML= "";
 }
-
 function asignarEventos() {
     
     NOMBRE.addEventListener("change",listarNombres);

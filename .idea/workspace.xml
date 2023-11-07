@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/Ej-Baul-productor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Baul.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Consumidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Productor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/ejercicio a entregar 2/practica2a-1/JLL_practica2a_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/ejercicio a entregar 2/practica2a-1/JLL_practica2a_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,25 +54,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/Diurno/Desktop/DA2D1A-JesLorLim",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alumno/Escritorio/DA2D1A-JesLorLim&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Diurno\Desktop\DA2D1A-JesLorLim\Bloque 3\Programacion de servicios y procesos\Practica\Camareros\.idea" />
@@ -112,11 +102,24 @@
       <workItem from="1698746777995" duration="32000" />
       <workItem from="1698764494004" duration="783000" />
       <workItem from="1698997916409" duration="2832000" />
+      <workItem from="1699353186909" duration="2841000" />
+      <workItem from="1699359205663" duration="1637000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
