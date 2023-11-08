@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/JLL_Practica1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/practica 1/img/Article-Header-Web-CS2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/practica 1/practica1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/ejercicio a entregar 2/practica2a-1/JLL_practica2a_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/ejercicio a entregar 2/practica2a-1/JLL_practica2a_1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/prueba dragable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/practica/draggable/draggable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/practica/draggable/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/practica/draggable/style.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,20 +67,24 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/alumno/Escritorio/DA2D1A-JesLorLim&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alumno/Escritorio/DA2D1A-JesLorLim/Bloque 2/Desarrollo de interfaces/Practica/practica 1/img&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/practica 1/img" />
       <recent name="C:\Users\Diurno\Desktop\DA2D1A-JesLorLim\Bloque 3\Programacion de servicios y procesos\Practica\Camareros\.idea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/practica 1" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -104,6 +113,8 @@
       <workItem from="1698997916409" duration="2832000" />
       <workItem from="1699353186909" duration="2841000" />
       <workItem from="1699359205663" duration="1637000" />
+      <workItem from="1699428854089" duration="4020000" />
+      <workItem from="1699437434972" duration="1196000" />
     </task>
     <servers />
   </component>

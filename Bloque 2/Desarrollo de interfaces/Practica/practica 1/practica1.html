@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Práctica 1</title>
+    <style>
+        body{
+            font-size: larger;
+            background-color: lightgray;
+        }
+        #cabecera{
+            width: 100%;
+            border: 2px solid ;
+        }
+        .cuerpo{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        h5{
+            color: blue;
+        }
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+            height: 200px;
+        }
+        td{
+            border: 2px solid black;
+        }
+        #contenedor{
+            display: block;
+            margin: auto;
+        }
+        .texto{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            height: 400px;
+            border: 1px solid black;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<img src="img/Article-Header-Web-CS2.png" alt="imagen de cabecera" id="cabecera"/>
+<div class="cuerpo">
+    <h5>Conter-Terrorist</h5>
+    <table>
+        <tr>
+            <td rowspan="3">Counter-terrorist</td>
+            <td>Glock</td>
+            <td colspan="2">Desert Eagle</td>
+        </tr>
+        <tr>
+            <td>M4A1S</td>
+            <td>M4A4</td>
+            <td>AWP</td>
+        </tr>
+        <tr>
+            <td>Chaleco</td>
+            <td>Chaleco+casco</td>
+            <td>Zeus x35</td>
+        </tr>
+    </table>
+    <div id="contenedor">
+        <div id="izquierda" class="texto">
+            <p>Los counter terroristas son los usuarios que deben defender las posiciones para evitar que los terroristas planten el dispositivo C4 y en caso de que lo planten deben desactivarlo en un tiempo inferior a 40 segundos</p>
+        </div>
+        <div id="derecha" class="texto">
+            <p>Los counter terroristas son los usuarios que deben salvar a los rehenes de las manos de los terroristas accediendo a la ubicación señalada</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
