@@ -1,0 +1,2 @@
+public class Regalos {
+}

@@ -1,10 +1,12 @@
+import java.security.SecureRandom;
+
 public class Productor implements Runnable {
 
     private final Baul baul;
     int contadorA = 0;
     int contadorB = 0;
     int contadorC = 0;
-
+    SecureRandom random = new SecureRandom();
     public Productor(Baul baul) {
         this.baul = baul;
     }
@@ -13,16 +15,17 @@ public class Productor implements Runnable {
     @Override
     public void run() {
         synchronized (baul) {
-            while (contadorA + contadorB + contadorC == 9) {
-                while (!baul.baulVacio()) {
+            while (contadorA + contadorB + contadorC != 9) {
+                while (!baul.estaVacio()) {
                     try {
                         baul.wait();
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
                 }
+                int numAleatorio;
                 char letra = '\0';
-                int numAleatorio = (int) (Math.random() * 3 + 1);
+                numAleatorio = random.nextInt(4);
                 switch (numAleatorio) {
                     case 1:
                         if (contadorA == 3) {
@@ -48,14 +51,11 @@ public class Productor implements Runnable {
                             contadorC++;
                         }
                         break;
-                    default:
-                        letra = '\0';
-                        break;
                 }
-                ;
-                if (baul.getContenido() == '\0') {
-                    System.out.println("Soy el productor y añado al baul el caracter" + letra);
-                    baul.llenarBaul(letra);
+                if (letra != '\0') {
+                    System.out.println("Soy el productor y añado al baul el caracter " + letra);
+                    System.out.println(numAleatorio);
+                    baul.setContenido(letra);
                     baul.notifyAll();
                 }
             }

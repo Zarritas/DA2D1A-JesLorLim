@@ -5,7 +5,7 @@ public class Baul {
         this.contenido = '\0';
     }
 
-    public void llenarBaul(char contenido) {
+    public void setContenido(char contenido) {
         this.contenido = contenido;
     }
 
@@ -13,11 +13,13 @@ public class Baul {
         return contenido;
     }
 
-    public void vaciarBaul(){
+    public char vaciar(){
+        char caracter = contenido;
         this.contenido = '\0';
+        return caracter;
     }
 
-    public boolean baulVacio() {
+    public boolean estaVacio() {
             return contenido=='\0';
     }
 
