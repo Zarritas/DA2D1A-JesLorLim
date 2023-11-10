@@ -1,6 +1,6 @@
 public class Consumidor implements Runnable{
 
-    private char letra;
+    private final char letra;
     private final Baul baul;
 
     public Consumidor(char letra, Baul baul) {
@@ -12,16 +12,14 @@ public class Consumidor implements Runnable{
     public void run() {
         synchronized (baul){
             for (int i = 0; i < 3; i++) {
-                while (baul.getContenido()!=letra) {
+                while (baul.estaVacio() || baul.getContenido()!=letra) {
                     try {
-                        System.out.println("soy el consumidor del carter "+letra+"y estoy esperando.");
                         baul.wait();
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
                 }
-                System.out.println("soy el consumidor del caracter "+letra+"y mo lo llevo.");
-                baul.vaciarBaul();
+                System.out.println("soy el consumidor y saco la letra "+baul.vaciar()+" y ya me he llevado "+(i+1)+" caracteres.");
                 baul.notifyAll();
             }
         }
