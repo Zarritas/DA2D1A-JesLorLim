@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/ejercicis globales/EjercicioTableroDibujo/EjercicioTablero.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/ejercicis globales/EjercicioTableroDibujo/EjercicioTablero.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +61,7 @@
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim",
+    "last_opened_file_path": "/home/alumno/Escritorio/JesLorLim_EcoParametros",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
