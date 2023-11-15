@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/La caja misteriosa.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 4/Desarrollo web en entorno cliente/Practica/eventos/ej3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Anfitrion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Anfitrion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Caja.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Caja.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Detective.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Detective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Invitados.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Invitados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Regalos.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,10 +64,11 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "deletionFromPopupRequiresConfirmation": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim",
+    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,6 +117,7 @@
       <workItem from="1699428854089" duration="4020000" />
       <workItem from="1699437434972" duration="1196000" />
       <workItem from="1699658418188" duration="386000" />
+      <workItem from="1699981119096" duration="5182000" />
     </task>
     <servers />
   </component>
