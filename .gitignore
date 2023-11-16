@@ -19,7 +19,10 @@ bin/
 
 ### IntelliJ IDEA ###
 .idea
+<<<<<<< HEAD
 !**/.idea
+=======
+>>>>>>> 677a149c786afad9845a084ce83a816ada6f76c0
 *.iws
 *.iml
 *.ipr
