@@ -53,6 +53,7 @@ public class Invitados implements Runnable {
         System.out.println("ADIOS - dijo "+nombre);
     }
     public void detener(){
+//        Thread.currentThread().interrupt();
         running = false;
     }
 }
