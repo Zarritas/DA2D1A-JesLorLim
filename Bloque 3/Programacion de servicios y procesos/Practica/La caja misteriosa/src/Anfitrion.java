@@ -37,7 +37,7 @@ public class Anfitrion implements Runnable{
                 caja.setRegalo(guardarRegalo());
                 try {
                     System.out.println("Estoy pensando - dijo "+nombre);
-                    Thread.sleep(500);
+                    Thread.sleep(5000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -48,14 +48,11 @@ public class Anfitrion implements Runnable{
                     e.printStackTrace();
                 }
             }
-            if (regalos.isEmpty()&&running){
-                try {
-                    caja.wait();
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
-            }
+
             caja.notifyAll();
+        }
+        while (running){
+
         }
         System.out.println("UN PLACER JUGAR CON VOSOTROS - dijo "+nombre);
     }

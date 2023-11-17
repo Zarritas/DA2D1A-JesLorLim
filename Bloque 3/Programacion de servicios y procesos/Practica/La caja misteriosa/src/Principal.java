@@ -15,7 +15,7 @@ public class Principal {
         Invitados invi4 = new Invitados("DR. MANDARINO",caja);
         Invitados invi5 = new Invitados("SR. PIZARRO",caja);
         Invitados invi6 = new Invitados("MARQUES DE MARINA",caja);
-        Detective detective = new Detective("COLOMBO",invi1,invi2,invi3,invi4,invi5,invi6,anfitrion,caja);
+        Detective detective = new Detective("COLOMBO",invi1,invi2,invi3,invi4,invi5,invi6,anfitrion);
 
         executor.submit(anfitrion);
         executor.submit(invi1);

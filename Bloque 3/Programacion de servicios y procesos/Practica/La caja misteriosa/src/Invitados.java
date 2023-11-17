@@ -24,7 +24,7 @@ public class Invitados implements Runnable {
         synchronized (caja){
             while(caja.vacia()&& running){
                 try {
-                    caja.wait(300);
+                    caja.wait(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -34,21 +34,21 @@ public class Invitados implements Runnable {
                 System.out.println("Soy "+nombre+" y saco de la caja el regalo: "+regalo);
                 try {
                     System.out.println(nombre+" dijo - estoy pensando");
-                    Thread.sleep(300);
+                    Thread.sleep(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
                 System.out.println("¡QUÉ FIESTA MÁS ABURRIDA! - dijo "+nombre);
                 caja.notifyAll();
             }
-            while(running) {
-                try {
-                    caja.wait();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        }
+        while(running) {
+            try {
+                Thread.sleep(3000);
+                System.out.println("¡QUÉ FIESTA MÁS ABURRIDA! - dijo "+nombre);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-            caja.notifyAll();
         }
         System.out.println("ADIOS - dijo "+nombre);
     }
