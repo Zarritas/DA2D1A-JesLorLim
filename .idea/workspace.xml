@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3260ea5d-d734-433c-998c-b028c5fe6223" name="Changes" comment="git ignore bien" />
+    <list default="true" id="3260ea5d-d734-433c-998c-b028c5fe6223" name="Changes" comment="git ignore bien">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Principal.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,12 +20,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Zarritas"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zarritas&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -43,11 +47,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/alumno/Escritorio/DA2D1A-JesLorLim",
+    "last_opened_file_path": "/home/alumno/Escritorio/DA2D1A-JesLorLim/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,13 +63,6 @@
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="DA2D1A-JesLorLim" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="DA2D1A-JesLorLim" />
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,6 +78,7 @@
       <updated>1700131683061</updated>
       <workItem from="1700131685805" duration="242000" />
       <workItem from="1700132131859" duration="450000" />
+      <workItem from="1700206937393" duration="153000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore bien">
       <option name="closed" value="true" />
