@@ -8,10 +8,6 @@ public class Detective implements Runnable{
     private final List<Invitados> invitados;
     private boolean pistolaEncontrada=false;
     SecureRandom random = new SecureRandom();
-<<<<<<< HEAD
-    private final Caja caja;
-=======
->>>>>>> 20f8340e20eb21cf12f5ddffc8abba86f111e90c
     private final Anfitrion anfitrion;
     private int preguntas=0;
 
@@ -46,7 +42,6 @@ public class Detective implements Runnable{
                 if (Objects.equals(invitados.get(numaleatorio).getRegalo(), "Pistola")) {
                     System.out.println(invitados.get(numaleatorio).getNombre() + " dijo - SI.");
                     System.out.println(invitados.get(numaleatorio).getNombre() + " HA MATADO AL SR. LEMON CON LA PISTOLA - dijo "+nombre);
-//                    Thread.currentThread().interrupt();
                     pistolaEncontrada = true;
                     for (Invitados invitado : invitados) {
                         invitado.detener();

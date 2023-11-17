@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3260ea5d-d734-433c-998c-b028c5fe6223" name="Changes" comment="git ignore bien">
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Anfitrion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Caja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Detective.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Fabrica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Invitado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Principal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final/src/Regalo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_23_14_08_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_11_23_14_08__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La Caja Misteriosa 2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La Caja Misteriosa 2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Detective.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Detective.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Invitados.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa/src/Invitados.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +42,8 @@
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="8f6f01b6-4f20-4f34-b9dd-4f638a253304" />
-        <option name="url" value="https://github.com/zarritas/DA2D1A-JesLorLim.git" />
+        <option name="accountId" value="8160d7e8-1b2a-4042-81ed-18a4b3ce5d5f" />
+        <option name="url" value="https://github.com/Zarritas/DA2D1A-JesLorLim.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -41,18 +54,22 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2YFqTWycuMHLtdAn98K8C4eGtTo" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/alumno/Escritorio/DA2D1A-JesLorLim/Bloque 3/Programacion de servicios y procesos/Practica/Interbloqueo",
+    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim/Bloque 3/Programacion de servicios y procesos/Practica/La Caja Misteriosa 2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,14 +77,6 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="DA2D1A-JesLorLim" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -79,6 +88,11 @@
       <workItem from="1700131685805" duration="242000" />
       <workItem from="1700132131859" duration="450000" />
       <workItem from="1700206937393" duration="153000" />
+      <workItem from="1700229210278" duration="606000" />
+      <workItem from="1700230284805" duration="119000" />
+      <workItem from="1700230424488" duration="17000" />
+      <workItem from="1700230505162" duration="80000" />
+      <workItem from="1700230600819" duration="153000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore bien">
       <option name="closed" value="true" />
@@ -95,6 +109,7 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="git ignore bien" />
     <option name="LAST_COMMIT_MESSAGE" value="git ignore bien" />
   </component>

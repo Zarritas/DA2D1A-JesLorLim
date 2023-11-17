@@ -38,14 +38,13 @@ public class Invitados implements Runnable {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("¡QUÉ FIESTA MÁS ABURRIDA! - dijo "+nombre);
                 caja.notifyAll();
             }
         }
         while(running) {
             try {
-                Thread.sleep(3000);
                 System.out.println("¡QUÉ FIESTA MÁS ABURRIDA! - dijo "+nombre);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -53,7 +52,6 @@ public class Invitados implements Runnable {
         System.out.println("ADIOS - dijo "+nombre);
     }
     public void detener(){
-//        Thread.currentThread().interrupt();
         running = false;
     }
 }
