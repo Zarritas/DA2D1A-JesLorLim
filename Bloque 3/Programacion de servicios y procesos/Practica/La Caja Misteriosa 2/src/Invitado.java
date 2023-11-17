@@ -5,10 +5,12 @@ public class Invitado
         implements Runnable{
     private Caja caja;              // NO NULO
     private Regalo regalo;
+    private boolean salir;
 
     public Invitado(String apodo, Caja caja) {
         super(apodo);
         setCaja(caja);
+        salir = false;
     }
 
     private void setCaja(@NotNull Caja caja) {
@@ -18,7 +20,7 @@ public class Invitado
     @Override
     public void run() {
         synchronized (caja) {
-            while (caja.estaVacia()) {
+            while (caja.estaVacia() && !salir) {
                 try {
                     wait(3000);
                 } catch (InterruptedException e) {

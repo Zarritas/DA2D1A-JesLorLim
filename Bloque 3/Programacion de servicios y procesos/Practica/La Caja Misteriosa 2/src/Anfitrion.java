@@ -7,11 +7,13 @@ public class Anfitrion
         implements Runnable {
     private List<Regalo> regalos;   // NO NULO
     private Caja caja;              // NO NULO
+    private boolean salir;
 
     public Anfitrion(String apodo, List<Regalo> regalos, Caja caja) {
         super(apodo);
         setRegalos(regalos);
         setCaja(caja);
+        salir=false;
     }
 
     private void setCaja(@NotNull Caja caja) {
@@ -23,12 +25,13 @@ public class Anfitrion
     }
 
 
+
     @Override
     public void run() {
         System.out.println("Soy el anfitrión");
 
         // Meto un regalo en la caja mientras queden regalos
-        while (!regalos.isEmpty())
+        while (!regalos.isEmpty() && !salir)
             synchronized (caja) {
                 // ¿Hay regalo en la caja? --> Me espero
                 if (!caja.estaVacia()) {
