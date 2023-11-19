@@ -11,9 +11,6 @@ public class Caja {
         add(new Juguete(TipoJuguete.FLECHA));
     }};
 
-    public Caja() {
-    }
-
     public Juguete cogerJuguete(int i){
         return listaJuguetes.get(i);
     }
@@ -28,17 +25,13 @@ public class Caja {
         return listaJuguetes;
     }
 
-    public int tamanioCaja(){
-        return listaJuguetes.size();
-    }
-
     public String contenidoCaja() {
         if (estaVacia()) {
             return "VACIA";
-        }else if (tamanioCaja()==4) {
-            return "LLENO [4 JUGUETES]";
+        }else if (listaJuguetes.size()==4) {
+            return "LLENA [4 JUGUETES]";
         }else {
-            return "QUEDAN "+tamanioCaja()+" JUGUETES";
+            return "QUEDAN "+listaJuguetes.size()+" JUGUETES";
         }
     }
 
@@ -47,14 +40,11 @@ public class Caja {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Caja caja)) return false;
-        return Objects.equals(listaJuguetes, caja.listaJuguetes);
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(listaJuguetes);
+    }
+
+    public String toString(){
+        return listaJuguetes.toString();
     }
 }
