@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Caja {
+public class Cofre {
 
-    private static final List<Juguete> listaJuguetes = new ArrayList<>() {{
+    private static final List<Juguete> listaJuguetes = new ArrayList<>(){{
         add(new Juguete(TipoJuguete.ARCO));
         add(new Juguete(TipoJuguete.ARCO));
         add(new Juguete(TipoJuguete.FLECHA));
@@ -27,9 +27,9 @@ public class Caja {
 
     public String contenidoCaja() {
         if (estaVacia()) {
-            return "VACIA";
+            return "VACIO";
         }else if (listaJuguetes.size()==4) {
-            return "LLENA [4 JUGUETES]";
+            return "LLENO [4 JUGUETES]";
         }else {
             return "QUEDAN "+listaJuguetes.size()+" JUGUETES";
         }

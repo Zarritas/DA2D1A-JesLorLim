@@ -1,5 +1,3 @@
-import java.util.Objects;
-
 public class Juguete {
 
     private final int numero;
@@ -21,5 +19,10 @@ public class Juguete {
         if (this == o) return true;
         if (!(o instanceof Juguete juguete)) return false;
         return color == juguete.color;
+    }
+
+    @Override
+    public String toString() {
+        return "Juguete tipo=" + color +" ";
     }
 }
