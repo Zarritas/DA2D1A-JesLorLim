@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="psp 10/11/2023 11:25 la caja magica" />
+    <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Baul.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Baul.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Consumidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Consumidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Principal.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Principal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Productor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Ej-Baul-productor/src/Productor.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,25 +112,8 @@
       <workItem from="1699359205663" duration="1637000" />
       <workItem from="1699428854089" duration="4020000" />
       <workItem from="1699437434972" duration="1196000" />
-      <workItem from="1699598503627" duration="1616000" />
+      <workItem from="1699598503627" duration="902000" />
     </task>
-    <task id="LOCAL-00001" summary="psp 10/11/2023 11:25">
-      <option name="closed" value="true" />
-      <created>1699611974510</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699611974510</updated>
-    </task>
-    <task id="LOCAL-00002" summary="psp 10/11/2023 11:25 la caja magica">
-      <option name="closed" value="true" />
-      <created>1699612021150</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1699612021150</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,9 +132,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="psp 10/11/2023 11:25" />
-    <MESSAGE value="psp 10/11/2023 11:25 la caja magica" />
-    <option name="LAST_COMMIT_MESSAGE" value="psp 10/11/2023 11:25 la caja magica" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

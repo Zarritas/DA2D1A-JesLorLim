@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6a6ed01-6205-4bd4-93bf-9915e3ab9d55" name="Changes" comment="Desarrollo entorno cliente actualizado bine final el de verdad">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-    </list>
+    <list default="true" id="d6a6ed01-6205-4bd4-93bf-9915e3ab9d55" name="Changes" comment="Desarrollo entorno cliente actualizado bine final el de verdad" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/DA2D1A-repos/JesLorLim_EcoParametros",
+    "last_opened_file_path": "E:/DA2D1A-repos/DA2D1A-JesLorLim",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +63,7 @@
       <workItem from="1698936364138" duration="2385000" />
       <workItem from="1698945053535" duration="601000" />
       <workItem from="1698959452510" duration="242000" />
+      <workItem from="1699658370144" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="Desarrollo entorno cliente">
       <option name="closed" value="true" />
