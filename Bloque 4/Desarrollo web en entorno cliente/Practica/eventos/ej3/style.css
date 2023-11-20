@@ -18,6 +18,10 @@ header div{
 	height: 95%;
 	position: absolute;
 }
+header div{
+    display: inline;
+    margin: 0px;
+}
 .opcion{
     display: none;
 }
