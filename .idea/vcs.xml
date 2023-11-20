@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Bloque 1/Desarrollo web entorno servidor/practica/JesLorLim-FormularioRepintado" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Examenes anteriores 1ra ev/Arco y flecha" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa" vcs="Git" />
   </component>
 </project>
