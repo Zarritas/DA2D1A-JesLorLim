@@ -1,0 +1,21 @@
+body{
+    background-color: lightgray;
+}
+header{
+    background-color: white;
+}
+h1{
+    color: orangered;
+}
+table, th, td{
+    border-color: rgb(128, 128, 128);
+}
+footer{
+    background-color: lightgray;
+}
+a{
+    color: orangered;
+}
+a:hover{
+    color: orange;
+}
