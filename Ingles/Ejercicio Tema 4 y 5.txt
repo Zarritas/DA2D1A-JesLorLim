@@ -1,0 +1,66 @@
+Unit 5
+--------------------------------------------------
+Ej1
+
+- loose connection
+- mute box
+- power button
+- volume control
+- control panel
+- no signal message
+--------------------------------------------------
+Ej2
+
+- no
+- yes
+- yes
+- no
+- yes
+--------------------------------------------------
+Ej3
+
+- reopen
+- reinstall
+- log off
+- press and hold
+- restart
+--------------------------------------------------
+Ej4
+
+- a, c
+- b, c
+- b, c
+- a, b
+- a, c
+- a, b
+--------------------------------------------------
+Ej5
+
+-password
+-back up
+-lose
+-recover
+- shut down
+- anti-virus software
+- follow the instructions
+--------------------------------------------------
+Ej6
+
+- turn left
+- opposite
+- go straight
+- at the end of the corridor
+- on your right
+- on your left
+- turn right
+--------------------------------------------------
+Ej7
+
+- ¿Puedes hacer un escaneado de virus y eliminar cualquier virus que hagan ir lento el sistema?
+- Aqui está tu plan de trabajo para esta semana
+- Suele ser buena idea comprobar que los cables esten bien conectados amtes de hacer cualquier cosa
+- ¿Como puedo acceder a la copia de seguridad del sistema?
+- ¿Cual es la mejor solucion para esto?
+- ¿Con quien estoy hablando por favor?
+- Introduce el disco, despues siga las instrucciones de la pantalla
+- ¿Que pasa con el icono de volumen?, ¿puedes verlo?
