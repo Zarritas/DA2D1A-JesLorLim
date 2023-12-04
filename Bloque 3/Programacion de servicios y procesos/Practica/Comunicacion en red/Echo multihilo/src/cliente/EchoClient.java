@@ -1,3 +1,5 @@
+package src.cliente;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -6,15 +8,19 @@ import java.net.InetAddress;
 import java.net.Socket;
 
 public class EchoClient {
+    /**
+     * El programa principal del cliente
+     *
+     * @param  args	argumentos de la linea de comandos
+     * @throws IOException	si ocurre un error de tipo I/O
+     */
     public static void main(String[] args) throws IOException {
         if (args.length != 1) {
-            System.err.println("Usage: java EchoClient <port number>");
+            System.err.println("Usage: java src.cliente.EchoClient <port number>");
             System.exit(1);
         }
-        InetAddress inetAddress = InetAddress.getByName("pc2803");
+        InetAddress inetAddress = InetAddress.getLocalHost();
         int portNumber = Integer.parseInt(args[0]);
-        System.out.println(inetAddress);
-        System.out.println(portNumber);
         try (
                 Socket socket = new Socket(inetAddress, portNumber);
                 PrintWriter socketOut = new PrintWriter(socket.getOutputStream(), true);
