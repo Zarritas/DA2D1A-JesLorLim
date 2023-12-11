@@ -1,0 +1,12 @@
+// Envía un mensaje a todos los clientes activos
+private void difusion(String mensaje) {
+        Thread[] threads = new Thread[clientsGroup.activeCount()];
+        clientsGroup.enumerate(threads);
+
+        for (Thread thread : threads) {
+            if (thread != null && !thread.equals(Thread.currentThread())) {
+                // Enviar el mensaje al cliente
+                // ...
+            }
+        }
+}
