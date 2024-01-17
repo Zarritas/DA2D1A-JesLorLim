@@ -11,6 +11,7 @@ import java.net.UnknownHostException;
 import org.jetbrains.annotations.NotNull;
 import util.Util;
 
+import static util.Conf.*;
 import static util.EchoError.ERROR_HOST_INVALIDO;
 import static util.Util.error;
 import static util.Util.mensaje;
@@ -37,26 +38,34 @@ public class ClienteChat {
         this.puertoServidor = puertoServidor;
     }
 
-    public static void main(String[] args)  {
-        if (args.length != 3) {
-            uso();
-            System.exit(1);
-        }
-        String apodo = args[0];
-
+    public static void main(String[] args){
+        String apodo = args[0]; // Obligatorio por parametros
         InetAddress ipServidor = null;
-        try {
-            ipServidor = InetAddress.getByName(args[1]);
-        } catch (UnknownHostException e) {
-            error(ERROR_HOST_INVALIDO, args[1]);
-            uso();
-            System.exit(1);
-        }
+        int puertoServidor = 0;         // TODO: 17/12/2023 T05, T08
 
-        int puertoServidor = Integer.parseInt(args[2]);         // TODO: 17/12/2023 T05, T08
+        if (args.length != 3) {
+            try {
+                ipServidor = InetAddress.getByName(HOST.s());
+                puertoServidor = PUERTO.n();
+
+            } catch (UnknownHostException e) {
+                error(ERROR_HOST_INVALIDO, HOST.s());
+                uso();
+                System.exit(1);
+            }
+        }else {
+            try {
+                ipServidor = InetAddress.getByName(args[1]);
+                puertoServidor = Integer.parseInt(args[2]);
+            } catch (UnknownHostException e) {
+                error(ERROR_HOST_INVALIDO, args[1]);
+                uso();
+                System.exit(1);
+            }
+        }
         try {
             new ClienteChat(apodo, ipServidor, puertoServidor).iniciar();
-            System.out.println("Fin del cliente: "+apodo);
+            System.out.println("Fin del cliente: " + apodo);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -6,7 +6,8 @@ public enum Conf {
     HOST("localhost"),
     PUERTO(8000),
     MIN_PUERTO(1),
-    MAX_PUERTO(65535);
+    MAX_PUERTO(65535),
+    ;
     private Object o;
 
     Conf(Object o) {
