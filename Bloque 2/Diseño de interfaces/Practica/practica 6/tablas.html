@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ejercicio formatear tabla</title>
+	<style>
+		th{
+			background: url(fondo_gris.gif);
+			background-repeat: no-repeat;
+		}
+		table,th,td{
+			border: 1px solid black;
+			border-collapse: collapse;
+			text-align: center;
+		}
+		td,th{
+			padding: 50px 5px 5px 5px;
+		}
+		.par{
+			background-color: lightgoldenrodyellow;
+		}
+		.par:first-of-type{
+			background-color: yellow;
+		}
+		th[class]{
+			background-color: rgb(214, 242, 252);
+		}
+		.cabecera{
+			background-color: rgb(240, 239, 239);
+		}
+		.dolar{
+			background-image: url(dolar.png);
+			background-repeat: no-repeat;
+			background-size: 20px;
+		}
+		.yen{
+			background-image: url(yen.png);
+			background-repeat: no-repeat;
+			background-size: 20px;
+		}
+		.libra{
+			background-image: url(libra.png);
+			background-repeat: no-repeat;
+			background-size: 20px;
+		}
+		.euro{
+			background-image: url(euro.png);
+			background-repeat: no-repeat;
+			background-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<table summary="Tipos de cambio">
+		<thead>
+			<tr></tr>
+			<tr class="cabecera">
+				<th scope="col">Cambio</th>
+				<th scope="col">Compra</th>
+				<th scope="col">Venta</th>
+				<th scope="col">Máximo</th>
+				<th scope="col">Mínimo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="par">
+				<th scope="row" class="euro">Euro/Dolar</th>
+				<td>1.2524</td>
+				<td>1.2527</td>
+				<td>1.2539</td>
+				<td>1.2488</td>
+			</tr>
+			<tr>
+				<th scope="row" class="dolar">Dolar/Yen</th>
+				<td>119.01</td>
+				<td>119.05</td>
+				<td>119.82</td>
+				<td>119.82</td>
+			</tr>
+			<tr class="par">
+				<th scope="row" class="libra">Libra/Dolar</th>
+				<td>1.8606</td>
+				<td>1.8611</td>
+				<td>1.8651</td>
+				<td>1.8522</td>
+			</tr>
+			<tr>
+				<th scope="row" class="yen">Yen/Euro</th>
+				<td>0.6711</td>
+				<td>0.6705</td>
+				<td>0.6676</td>
+				<td>0.6713</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

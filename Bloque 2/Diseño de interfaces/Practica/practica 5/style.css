@@ -1,0 +1,35 @@
+p:first-of-type{
+    font-weight: bolder;
+    font-style: oblique;
+    text-indent: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#consejo{
+    color: purple;
+    background-color: rgb(165, 182, 133);
+}
+#textolinea{
+    text-transform: capitalize;
+    color: purple;
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+h3{
+    font-weight: bolder;
+    background-color: rgb(187, 116, 75);
+    color: rgb(243, 217, 184);
+    font-family: 'Times New Roman', Times, serif;
+}
+.clase{
+    color: purple;
+    font-style: italic;
+    font-weight: lighter;
+}
+#idparaestilo{
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    word-spacing: 15px;
+}

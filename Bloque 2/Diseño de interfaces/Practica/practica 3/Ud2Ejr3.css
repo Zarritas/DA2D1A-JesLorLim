@@ -1,0 +1,14 @@
+#capa1 a:hover{
+    background-color: #F9DDC3;
+}
+#capa2:hover a{
+    background-color: #9786A8;
+}
+#capa3 a[href="http://www.google.es"]:hover{
+    background-color: #CECA85;
+}
+#capa4:hover a[href="http://www.madrid.org"]{
+    background-color: #F9F6C3;
+}
+
+/* Jesús Lorenzo*/
