@@ -13,6 +13,7 @@ import util.Conf;
 import util.EchoError;
 import util.Util;
 
+import static util.Conf.*;
 import static util.EchoError.ERROR_HOST_INVALIDO;
 import static util.Util.error;
 import static util.Util.mensaje;
@@ -39,7 +40,35 @@ public class ClienteChat {
         this.puertoServidor = puertoServidor;
     }
 
+<<<<<<< HEAD
     public static void main(String[] args) {
+=======
+    public static void main(String[] args){
+        String apodo = args[0]; // Obligatorio por parametros
+        InetAddress ipServidor = null;
+        int puertoServidor = 0;         // TODO: 17/12/2023 T05, T08
+
+        if (args.length != 3) {
+            try {
+                ipServidor = InetAddress.getByName(HOST.s());
+                puertoServidor = PUERTO.n();
+
+            } catch (UnknownHostException e) {
+                error(ERROR_HOST_INVALIDO, HOST.s());
+                uso();
+                System.exit(1);
+            }
+        }else {
+            try {
+                ipServidor = InetAddress.getByName(args[1]);
+                puertoServidor = Integer.parseInt(args[2]);
+            } catch (UnknownHostException e) {
+                error(ERROR_HOST_INVALIDO, args[1]);
+                uso();
+                System.exit(1);
+            }
+        }
+>>>>>>> 2e1d8d41bd3ff0b69b3f2aed7e7bf51deb4ad369
         try {
             String apodo =APODO_SERVIDOR.s() ;
             InetAddress ipServidor = InetAddress.getByName(Conf.HOST.s());
