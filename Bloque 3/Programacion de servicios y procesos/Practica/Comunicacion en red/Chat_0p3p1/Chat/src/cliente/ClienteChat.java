@@ -9,6 +9,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 import org.jetbrains.annotations.NotNull;
+import util.Conf;
+import util.EchoError;
 import util.Util;
 
 import static util.EchoError.ERROR_HOST_INVALIDO;
@@ -37,27 +39,21 @@ public class ClienteChat {
         this.puertoServidor = puertoServidor;
     }
 
-    public static void main(String[] args)  {
-        if (args.length != 3) {
-            uso();
-            System.exit(1);
-        }
-        String apodo = args[0];
-
-        InetAddress ipServidor = null;
+    public static void main(String[] args) {
         try {
-            ipServidor = InetAddress.getByName(args[1]);
-        } catch (UnknownHostException e) {
-            error(ERROR_HOST_INVALIDO, args[1]);
-            uso();
-            System.exit(1);
-        }
-
-        int puertoServidor = Integer.parseInt(args[2]);         // TODO: 17/12/2023 T05, T08
-        try {
+            String apodo =APODO_SERVIDOR.s() ;
+            InetAddress ipServidor = InetAddress.getByName(Conf.HOST.s());
+            int puertoServidor = Conf.PUERTO.n();
+            if (args.length == 3) {
+                apodo = args[0];
+                ipServidor = InetAddress.getByName(args[1]);
+                puertoServidor = Integer.parseInt(args[2]);
+            }
             new ClienteChat(apodo, ipServidor, puertoServidor).iniciar();
-            System.out.println("Fin del cliente: "+apodo);
+            System.out.println("Fin del cliente: " + apodo);
         } catch (IOException e) {
+            uso();
+            System.exit(1);
             e.printStackTrace();
         }
     }
@@ -83,6 +79,10 @@ public class ClienteChat {
                     break;
                 }
             }
+        }catch (IOException e) {
+            e.printStackTrace();
+            error(EchoError.valueOf(e.getMessage()), e.getMessage());
+            System.exit(1);
         }
     }
 

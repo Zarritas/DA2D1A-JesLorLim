@@ -1,6 +1,7 @@
 package servidor;
 
 import org.jetbrains.annotations.NotNull;
+import util.Conf;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,20 +9,22 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+import static util.Conf.FINAL;
+import static util.Conf.MENSAJE_DESPEDIDA;
 import static util.Util.mensaje;
 
 
 /**
  * GestorCliente
- *
+ * <p>
  * Palabra clave de finalización: /fin
  */
 public class GestorCliente implements Runnable {
-    private Socket socket;
-    private String apodoServidor;
+    private final Socket socket;
+    private final String apodoServidor;
 
-    public GestorCliente(@NotNull Socket clienteSocket, @NotNull String apodoServidor) {
-        this.socket = clienteSocket;
+    public GestorCliente(@NotNull Socket socket, @NotNull String apodoServidor) {
+        this.socket = socket;
         this.apodoServidor = apodoServidor;
     }
 
@@ -42,11 +45,10 @@ public class GestorCliente implements Runnable {
                 salidaSocket.println(entradaUsuario);       // Envío de mensaje de eco del servidor al cliente
 
                 String[] palabrasEntradaUsuario = entradaUsuario.split(": ");
-                if (palabrasEntradaUsuario.length==2 && palabrasEntradaUsuario[1].equals("/fin")) {
-                    String despedida = "¡Adios querido cliente!";
+                if (palabrasEntradaUsuario.length==2 && palabrasEntradaUsuario[1].equals(FINAL.s())) {
                     // Mostrar mensaje de despedida del servidor por pantalla
-                    System.out.println(mensaje(apodoServidor, despedida, socket));
-                    salidaSocket.println(despedida);         // Envío de mensaje de despedida del servidor al cliente
+                    System.out.println(mensaje(apodoServidor, MENSAJE_DESPEDIDA.s(), socket));
+                    salidaSocket.println(MENSAJE_DESPEDIDA);         // Envío de mensaje de despedida del servidor al cliente
                     break;
                 }
             }

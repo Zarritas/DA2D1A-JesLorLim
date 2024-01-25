@@ -5,11 +5,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import util.Util;
 
-import static util.Conf.MAX_PUERTO;
+import static util.Conf.*;
 import static util.EchoError.ERROR_PUERTO_INVALIDO;
 import static util.Util.error;
-import static util.Conf.APODO_SERVIDOR;
-import static util.Conf.MIN_PUERTO;
 
 
 /**
@@ -45,7 +43,6 @@ public class ServidorChat {
      * @param args  [0] Puerto del servidor
      */
     public static void main(String[] args) {
-        final int MAX_CLIENTES=9;
         int puerto=0;
 
         if (args.length != 1) {
@@ -66,7 +63,7 @@ public class ServidorChat {
             System.exit(1);
         }
 
-        new ServidorChat(puerto, MAX_CLIENTES).iniciar();
+        new ServidorChat(puerto, MAX_CLIENTES.n()).iniciar();
         System.out.println("Fin del servidor: "+APODO_SERVIDOR.s());
     }
 

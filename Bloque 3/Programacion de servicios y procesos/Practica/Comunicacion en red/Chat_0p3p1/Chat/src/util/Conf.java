@@ -6,7 +6,10 @@ public enum Conf {
     HOST("localhost"),
     PUERTO(8000),
     MIN_PUERTO(1),
-    MAX_PUERTO(65535);
+    MAX_PUERTO(65535),
+    FINAL("/fin"),
+    MENSAJE_DESPEDIDA("¡Adios querido cliente!"),
+    MAX_CLIENTES(9);
     private Object o;
 
     Conf(Object o) {
@@ -14,7 +17,7 @@ public enum Conf {
     }
 
     public int n() {
-        return (int)o;
+        return (int) o;
     }
 
     public String s() {
