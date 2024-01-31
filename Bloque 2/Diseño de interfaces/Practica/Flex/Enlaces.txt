@@ -1,0 +1,5 @@
+http://www.falconmasters.com/css/guia-flexbox-layouts/
+
+https://desarrolloweb.com/articulos/flexbox-align-items.html
+
+https://webdesign.tutsplus.com/es/tutorials/exercises-in-flexbox-simple-web-components--cms-28049
