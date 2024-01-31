@@ -1,0 +1,63 @@
+*{
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+div[class]{
+    border-style: dashed;
+    border-color: blue;
+}
+div.columna{
+    border: none;
+    margin: 0;
+    display: inline;
+    width: 65%;
+}
+div.columna:first-child{
+    width: 20%;
+}
+div[id]{
+    padding: 10px;
+    margin: 10px;
+}
+
+header,footer{
+    height: 2rem;
+    margin: 10px;
+}
+
+#subcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+}
+#subcontainer *{
+    flex-wrap: wrap;
+    margin: 10px;
+}
+aside{
+    height: 5rem;
+    width: 10rem;
+}
+article{
+    height: 15rem;
+    width: 10rem;
+}
+main {
+    width: 100%;
+    height: 21rem;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+}
+.caja-flex{
+    width: 100px;
+    height: 50px;
+}

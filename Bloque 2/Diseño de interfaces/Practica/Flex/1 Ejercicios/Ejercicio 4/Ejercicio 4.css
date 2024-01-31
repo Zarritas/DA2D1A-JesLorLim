@@ -10,14 +10,39 @@ div{
 ul, li {
   list-style: none;
 }
-ul{
+ul[class~="flexend"]{
   padding: 0;
   display: flex;
+  align-items: flex-end;
   flex-direction: row;
   justify-content: space-between;
-  align-self: baseline;
+  height: var(--alto);
 }
-
+ul[class~="flexend"] li:nth-child(3){
+  align-self: flex-start;
+}
+ul[class~="flexstart"]{
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+  height: var(--alto);
+}
+ul[class~="flexstart"] li:nth-child(3){
+  align-self: center;
+}
+ul[class~="baseline"]{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: var(--alto);
+}
+.test.baseline li {
+  height: var(--altura);
+}
 ul li {
   display: flex;
   width: 5em;
