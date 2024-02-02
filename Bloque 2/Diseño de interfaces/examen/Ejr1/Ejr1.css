@@ -1,0 +1,34 @@
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+div{
+    border: black solid;
+    margin: 25px;
+    width: 80%;
+}
+#cabecera{
+    height: 8em;
+    border-width: 3px;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    position: relative;
+}
+#cabecera h1{
+    background-color: aqua;
+    width: 100%;
+    text-align: right;
+    align-items: center;
+    margin: 0;
+    padding: 3% 0;
+}
+img{
+    float: right;
+}
+#contenido{
+    height: 50vh;
+    border-width: 1px;
+    overflow: auto;
+}

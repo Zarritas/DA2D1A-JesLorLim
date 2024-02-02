@@ -1,0 +1,33 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 65vh;
+    border: #000000 1px solid;
+    font-size: 22px;
+}
+header div{
+    margin: 22px;
+}
+
+.columna:nth-of-type(1){
+    flex-grow: 2;
+}
+.columna:nth-of-type(2){
+    flex-grow: 1;
+}
+
+.columna div{
+    border: blue 1px dotted;
+    margin: 0;
+    height: 50%;
+}
+.columna:nth-of-type(2){
+    border: red 1px dotted;
+}
+
+ol{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
