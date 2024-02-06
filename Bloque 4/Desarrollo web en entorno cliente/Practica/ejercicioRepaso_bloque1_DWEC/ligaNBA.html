@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="ligaNBA.css" />
+    <script src="ligaNBA_stats_data.js"></script>
+    <title>Estadísticas de la NBA</title>
+</head>
+<body>
+        <div id="controles">
+            <table width="670" border="1" "Selector de columnas">
+                <tr>
+                    <td colspan="8" align="center" class="tableclass" style="height: 40px;">OPCIONES DE VISUALIZACIÓN</td>
+                </tr>
+
+                <tr>
+                    <td width="50px" class="tablecell"></td>
+                    <td colspan="6" align="center" class="tableclass">Ordena por la columna que selecciones</td>
+                    <td width="50px" class="tablecell"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" class="tablecell"><label>Jugador</label><input type="radio"
+                            name="r_select" value="r_player"></td>
+                    <td colspan="2" align="center" class="tablecell"><label>Puntos</label><input type="radio"
+                            name="r_select" value="r_ptos"></td>
+                    <td colspan="2" align="center" class="tablecell"><label>Rebotes</label><input type="radio"
+                            name="r_select" value="r_rebotes"></td>
+                    <td colspan="2" align="center" class="tablecell"><label>Valoración</label><input type="radio"
+                            name="r_select" value="r_valor"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" class="tableclass">Escribe el nombre de un jugador:</td>
+                    <td colspan="5"><input type="text" id="t_player" placeholder="Escribe tu jugador"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center" class="tableclass"><label for="s_rival">Equipo rival: </label></td>
+                    <td colspan="5" align="center" class="tablecell"><select
+                            id="s_rival" name="s_rival">
+                            <option value="">Elige un equipo</option>
+                            <option value="Spurs">San Antonio Spurs</option>
+                            <option value="Celtics">Boston Celtics</option>
+                            <option value="76ers">Philadelphia 76ers</option>
+                            <option value="Bulls">Chicago Bulls</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    <div id="cabecera">
+        <table class="header">
+            <tr class="fila">
+                <td class="celda jugador">Jugador</td>
+                <td class="celda rival">Rival</td>
+                <td class="celda fase">Fase</td>
+                <td class="celda puntos">Ptos</td>
+                <td class="celda rebotes">Rebs</td>
+                <td class="celda valoracion">Val</td>
+            </tr>
+        </table>
+    </div>
+    <div id="playerlist">
+    </div>
+    <div id="stats">
+    </div>
+
+</body>
+<script src="ligaNBA.js"></script>
+</html>

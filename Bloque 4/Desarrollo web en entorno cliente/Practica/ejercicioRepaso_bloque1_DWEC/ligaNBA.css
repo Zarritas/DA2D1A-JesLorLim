@@ -1,0 +1,85 @@
+.tableclass {
+  border: 2px solid rgb(5, 5, 122);
+  background-color: rgb(202, 222, 241);
+  border-radius: 5px;
+  font-family: Verdana, sans-serif;
+}
+
+.tablecell {
+  border: none;
+  font-family: Verdana, sans-serif;
+}
+
+.header {
+  height: 36px;
+  background-color: rgb(5, 5, 122);
+}
+
+.fila {
+  justify-content: center;
+  background-color: deepskyblue;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.celda {
+  background-color: lightcyan;
+  color: navy;
+  border: 1px solid navy;
+  border-radius: 5px;
+  margin-right: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 30px;
+  text-align: center;
+  line-height: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.jugador {
+  width: 200px;
+}
+
+.rival {
+  width: 180px;
+}
+
+.fase {
+  width: 100px;
+}
+
+.puntos {
+  width: 40px;
+}
+
+.rebotes {
+  width: 40px;
+}
+
+.valoracion {
+  width: 40px;
+}
+
+.textstat {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.barrastat {
+  background-color: red;
+  height: 20px;
+  margin-right: 5px;
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+#controles {
+  width: 650px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
