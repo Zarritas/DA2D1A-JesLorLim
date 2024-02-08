@@ -27,3 +27,25 @@ img {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 0.5em;
+}
+@media (min-width: 768px) {
+	.wrapper li.text{
+		grid-area: texto;
+	}
+	.wrapper{
+		grid-template-areas: "texto texto";
+		grid-template-columns: repeat(2,calc(50% - 1em));
+	}
+}
+@media(min-width: 1024px){
+	.wrapper li.wide{
+		grid-column: span 2;
+	}
+	.wrapper li.text{
+		grid-column: 2/ span 2;
+		grid-row: span 2;
+	}
+	.wrapper{
+		grid-template-columns: repeat(4,calc(25% - 1em));
+	}
+}

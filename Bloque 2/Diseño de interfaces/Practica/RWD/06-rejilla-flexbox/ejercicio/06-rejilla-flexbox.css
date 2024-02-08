@@ -23,3 +23,37 @@ div {
     padding: 0.5em;
     margin: 0.5em;
 }
+
+@media (768px <=width<1024px ) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .element {
+        width: calc(50% - 1em);
+        color:blue;
+    }
+}
+@media (1024px <=width<1200px ) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .element {
+        width: calc(33% - 1em);
+        color: green;
+    }
+}
+@media (width>=1200px ) {
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .element {
+        width: calc(16% - 1em);
+        color: red;
+    }
+}

@@ -80,7 +80,6 @@ div.contenedor section.main article {
 	margin-bottom: var(--espacio);
 	padding-bottom: var(--espacio);
 	border-bottom:1px solid #000;
-	margin: 1.2em;
 }
 
 /* Estilos de la barra lateral */
@@ -137,7 +136,7 @@ div.contenedor footer .links {
 
 div.contenedor footer .social {
 	background:#e67e22;
-	display: flex;	
+	display: flex;
 	order: 2;
 }
 
@@ -147,4 +146,30 @@ div.contenedor footer .social a {
 	text-align: center;
 	padding: 0.7em;
 	flex-grow: 1;
+}
+@media (max-width: 1000px){
+	div.contenedor section.main{
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 800px){
+	.contenedor{
+		flex-direction: column;
+	}
+	div.contenedor header {
+		padding: 0;
+		flex-direction: column;
+	}
+	.logo{
+		padding: 0.5em;
+	}
+}
+@media (max-width: 600px) {
+	div.contenedor footer .links{
+		width: 100%;
+	}
+	div.contenedor footer{
+		justify-content: center;
+	}
 }
