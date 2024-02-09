@@ -5,7 +5,8 @@ div {
     border: 10px solid black;
     padding: 1em;
     margin: 0.5em;
-    text-align: center;    
+    text-align: center;
+    display: grid;
 }
 .element {
     border: 10px solid green;
@@ -20,4 +21,22 @@ div {
     border: 10px solid red;
     padding: 0.5em;
     margin: 0.5em;
+}
+@media (768px <= width < 1024px) {
+    .row{
+        grid-template-columns: repeat(2,calc(50% - 0.5em));
+        grid-gap: 1em;
+    }
+}
+@media (1024px <= width < 1200px) {
+    .row{
+        grid-template-columns: repeat(3,calc(33% - 0.5em));
+        grid-gap: 1em;
+    }
+}
+@media (width >= 1200px) {
+    .row{
+        grid-template-columns: repeat(6,calc(16% - 0.5em));
+        grid-gap: 1em;
+    }
 }
