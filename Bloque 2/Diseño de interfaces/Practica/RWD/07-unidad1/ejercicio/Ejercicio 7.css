@@ -163,6 +163,10 @@ div.contenedor footer .social a {
 	}
 	.logo{
 		padding: 0.5em;
+		text-align: center;
+	}
+	div.contenedor aside{
+		flex-direction: row;
 	}
 }
 @media (max-width: 600px) {
