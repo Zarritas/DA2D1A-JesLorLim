@@ -1,0 +1,34 @@
+2ª Evaluación
+--------------------------------------------------------------
+- PSP (Lunes - 26 febrero)
+No sabemos el funcionamiento del examen práctico
+Seguramente examen Teórico
+	FTP
+	Chat
+	SSH
+	Cosas de hilos
+
+-Interfaces(Miercoles - 21 febrero)
+Examen teórico
+	Uso de Estilos
+	Flexbox
+	Grid
+
+-Desarrollo web en entorno servidor(Martes - 20 febrero)
+Examen teórico con preguntas "prácticas"
+	Cookies
+	Session
+
+-Despliegue de aplicaciones web(27/29 febrero)
+Examen teórico con preguntas "prácticas"
+	Apache2
+	Vsftpd
+
+-Inglés
+Examen Listening Writing Reading(Viernes - 16 febrero)
+Examen Gramatic vocabulary
+	Prepositions
+	Relative pronouns
+	Infinitivos y gerundios
+	Pasiva
+	Condicionales
