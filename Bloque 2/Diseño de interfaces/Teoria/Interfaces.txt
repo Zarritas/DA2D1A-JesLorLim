@@ -2,7 +2,7 @@ Interfaces
 -Uso de estilos
 ----------------------------------------------------------------------------------
 	Hoja CSS: permite separar contenido de estilos
-	Filosofía: <body> para estructura de los contenidos; <head> o archivo externo para los estilos.
+	Filosofía: <body> para estructura de los contenidos; <style> o archivo externo para los estilos.
 	Ventaja: 
 		-separación de contenidos y estilos para facilitar la realizacion de cambios.
 		-adaptación de los sitios web a distintos dispositivos
@@ -212,7 +212,6 @@ Interfaces
 		-gap 
 			-row-gap
 			-column-gap
-		
 ----------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------
 -Grid
