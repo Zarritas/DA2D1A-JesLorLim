@@ -1,0 +1,335 @@
+Interfaces
+-Uso de estilos
+----------------------------------------------------------------------------------
+	Hoja CSS: permite separar contenido de estilos
+	Filosofía: <body> para estructura de los contenidos; <head> o archivo externo para los estilos.
+	Ventaja: 
+		-separación de contenidos y estilos para facilitar la realizacion de cambios.
+		-adaptación de los sitios web a distintos dispositivos
+----------------------------------------------------------------------------------
+	Vinculación
+		-Atributo style
+		-Etiqueta style
+		-Etiqueta link y archivo externo
+----------------------------------------------------------------------------------
+	Selectores	
+		Orden estructura
+			-selector
+			-propiedad
+			-valor
+		Basados en etiquetas, reconoce las etiquetas html existentes
+		Basados en Clases, reconoce las etiquetas que tengan asignada esa clase
+		Basados en Id, reconoce la etiqueta que tengan asignada esa clase
+	Agrupamiento
+		-separados por comas
+	Anidamientos
+		-separados por un espacio, aplica estilos a todos los hijos o subhijos con ese selector
+		-separados por un ">", aplica estilos a los hijos directos con ese selector
+		-separados por un "+", aplica estilos a la primera etiqueta con el selector que tenga como adyacente el primer selector a la misma altura
+		-separados por una "~", aplica estilos a las etiquetas con el selector que tenga como adyacente el primer selector a la misma altura
+	Pseudo-clases, separado por ":", dependientes del estado de la etiqueta
+	pseudo-elementos, seprado por "::", aplica a partes especificas de una etiqueta
+----------------------------------------------------------------------------------
+	Variables
+		-selector ":root"
+		-nombre de las variables inician en "--"
+		-referenciarlo como var()
+----------------------------------------------------------------------------------
+	Buenas practicas
+		-comentarios /**/
+		-nombres espècificos y claros
+		-los selectores no deben describir una caracteristica visual
+		-visión semántica
+		-separacion por "_" o "-"
+		-Agrupar por selector
+		-agrupar por etiquetas
+		-estructurar visualmente los atributos
+----------------------------------------------------------------------------------
+	Unidaddes de medida
+		-valores absolutos
+			-In
+			-Cm
+			-Mm
+			-Pt
+			-pc
+			-px
+		-valores relativos
+			-em
+			-rem
+			-%
+			-vw
+			-vh
+			-vmin
+			-vmax
+		-se recomienda no maqueta con px para escalabilidad
+		-se recomienda
+			-%
+			-em
+			-rem
+			-vmin
+			-vmax
+----------------------------------------------------------------------------------
+	Atributos de fuentes
+		-color
+			-RGB
+			-RGBA
+			-Hexadecimal
+		-font-size
+		-font-weight
+		-font-style
+		-font-family
+		-@font-face
+		-text-decoration
+		-text-align
+		-text-shadow
+		-text-indent
+		-line height
+----------------------------------------------------------------------------------
+	Atributos de fuentes
+		-background-color
+		-background-image
+		-background-repeat
+		-background-position
+		-background-origin
+		-background-clip
+		-background-size
+		-background-blend-mode
+		-background-atachment
+----------------------------------------------------------------------------------
+	Atributos de fuentes
+		-caption-side
+		-table-layout
+		-border-collapse
+		-border-spacing
+		-empty-cells
+		-vertical-align
+		-overflow
+		-display
+		-visibility
+----------------------------------------------------------------------------------
+	Atributos de listas
+		-list-style-type
+		-list-style-image
+		-list-style-position
+----------------------------------------------------------------------------------
+	Atributos de cajas
+		-margin
+			-margin-top
+			-margin-left
+			-margin-right
+			-margin-bottom
+		-padding
+			-padding-top
+			-padding-left
+			-padding-right
+			-padding-bottom
+		-border
+			-border-top
+			-border-left
+			-border-right
+			-border-bottom
+			-border-width
+			-border-style
+			-border-color
+			-border-radius
+			-border-image
+		-box shadow
+		-width
+		-height
+		-max-width
+		-max-height
+		-min-width
+		-min-height
+		-atributos de posición
+			-static
+			-absolute
+			-relative
+			-fixed
+			-sticky
+		-z-index
+		-float
+		-clear
+----------------------------------------------------------------------------------
+	Precedencia de estilos
+		-0º !important (no es buena praxis)
+		-1º atributo style
+		-2º etiqueta style html
+		-3º id
+		-4º class
+		-5º anidados
+		-6º pseudoclases
+		-7º etiquetas
+		-8º sin especificación(body, html, *)
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+-Flexbox
+----------------------------------------------------------------------------------
+	Contenedor
+		-flex-flow
+			-flex-direction
+				-row (Horizontal)
+				-column (Vertical)
+				-row reverse (Horizontal invertido)
+				-column reverse (Vertical invertido)
+			-flex-wrap
+				-wrap (Multilínea)
+				-nowrap (Una línea)
+				-wrap-reverse (Multilínea invertido)
+		Eje principal
+			-justify-content
+				-flex-start (Principio)
+				-flex-end (Final)
+				-center (Centro)
+				-space-between (Mismo espacio entre ellos)
+				-space-around (mismo espacio a ambos lados)
+			-align-content
+				-flex-start (Principio)
+				-flex-end (Final)
+				-center (Centro)
+				-space-between (Mismo espacio entre ellos)
+				-space-around (mismo espacio a ambos lados)
+				-stretch (Estira para ocupar todo el espacio)
+		Eje secundario
+			-align-items
+				-flex-start (Principio)
+				-flex-end (Final)
+				-center (Centro)
+				-stretch (Estira para ocupar todo el espacio)
+				-baseline (segun la base del contenido)
+		Propiedades hijos
+			-align-self
+				-auto
+				-flex-start (Principio)
+				-flex-end (Final)
+				-center (Centro)
+				-stretch (Estira para ocupar todo el espacio)
+				-baseline (segun la base del contenido)
+			-flex-grow, factor de crecimiento
+			-flex-shrink, factor de decrecimiento
+			-flex-basis, tamaño base
+			-order, orden de los elementos
+			-flex <grow><shrink><basis>
+		-gap 
+			-row-gap
+			-column-gap
+		
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+-Grid
+	Unidades, fr(fraccion del espacio restante)
+	Columnas
+		-grid-template-columns: tantos valores como columnas queramos
+	Filas
+		-grid-template-rows: tantos valores como filas queramos
+		-grid-auto-rows
+	-grid-gap
+		-grid-row-gap
+		-grid-column-gap
+	-grid area <grid-row-start><grid-column-start><grid-row-end><grid-column-end>
+	Varios
+		-span
+		-repeat(veces,tamaño)
+		-minmax(min,max)
+		-auto-fill
+		-auto-fit
+		-grid-auto-flow
+		-justify-items
+		-align-items
+		-justify-content
+		-align-content
+	Items
+		-grid-column
+		-grid-column-start
+		-grid-column-end
+		-grid-row-start
+		-grid-row-end
+		-grid-area:nombre
+		-order
+		-align-self
+		-justify-self
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+-RWD(Responsive Web Design)
+----------------------------------------------------------------------------------
+	Gracefull degradation, se desarrolla para los ultimos
+	Progresive enchancement, se desarrolla versión basica y luego se mejora
+	Beneficios:
+		- Reducción del coste
+		- Eficiencia en la actualización
+		- Mejora de la usabilidad
+		- Mejora el SEO
+		- Impacto en el visitante
+----------------------------------------------------------------------------------
+	Diseño fluido
+		- de PX a EM
+		- de PX a %
+----------------------------------------------------------------------------------
+	Sistemas de rejilla
+		- 1 columna xs(<544px)
+		- 2 columna xs(>=544px)
+		- 3 columna xs(>=768px)
+		- 4 columna xs(>=992px)
+		- 6 columna xs(>=1200px)
+----------------------------------------------------------------------------------
+	Imagenes fluidas
+		- Tamaño maximo (max-width:400px)
+		- Ancho del contenedor 
+			-(width:100%;)
+			-(max-width:100%;)
+			-(width:100%;max-width:400px;)
+		-Backgrounds (background-size: cover;)
+----------------------------------------------------------------------------------
+	Viewport
+		-Nos permite definir ancho, alto y escala
+		-Tamaño
+			-numero fijos
+			-device-width;device-height
+		-Escala
+			-initial-scale
+			-maximum-scale;minimum-scale
+			-user-scalable[yes|no]
+		-Accesibilidad, no bloquear las opciones de zoom
+----------------------------------------------------------------------------------
+	Media Queries
+		-Seleccionar el tipo de medio
+		-Consultar vas características
+		-AND
+			-Todas validas
+		-OR
+			-Solo es necesaria 1 valida
+		-NOT
+			-Ninguna valida
+		-Caracteristicas
+			-area de visualización
+				-width
+				-height
+				-aspect-ratio
+				-orientation
+			-pantalla del dispositivo
+				-device-width
+				-device-height
+				-device-aspect-ratio
+			-otras
+				-color
+				-monocrome
+				-resolution
+			-posibilidad de añadir a todas max- y min-
+----------------------------------------------------------------------------------
+	Metodologías
+		-Desktop First
+			-primero pantallas grandes
+			-max-width
+			-no soportados por todos los moviles
+			-la version móvil termina faltandole cosas
+		-Mobile First
+			-desarrollado para pantallas pequeñas
+			-min-width
+			-funciona en todos los moviles
+			-hoja de estilos más sencilla
+			-contenido importante más claro
+		-Puntos de rotura
+			-320px moviles
+			-768px tablet
+			-1024px portatil
+			-1200px sobremesa
+			-adaptarlo en funcion al contenido
