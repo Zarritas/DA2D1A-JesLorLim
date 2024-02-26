@@ -31,6 +31,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -127,6 +130,7 @@
       <workItem from="1700514412374" duration="343000" />
       <workItem from="1700515126090" duration="7000" />
       <workItem from="1708079706265" duration="1000" />
+      <workItem from="1708941046875" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="psp 10/11/2023 11:25">
       <option name="closed" value="true" />
