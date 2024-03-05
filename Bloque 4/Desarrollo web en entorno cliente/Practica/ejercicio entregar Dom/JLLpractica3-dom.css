@@ -1,0 +1,60 @@
+div {
+    width: 100px;
+    height: 10px;
+    border: 1px solid black;
+}
+
+.caja {
+    border: 2px solid grey;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+  
+.boton {
+    background-color: darkcyan;
+    color: aquamarine;
+    width: 100px;
+    height: fit-content;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+
+}
+
+.cont1 {
+    height : 100px;
+    text-align : center;
+    margin-top: 20px;
+}
+
+.cont2 {
+    height : 180px;
+    text-align : center;
+    margin-top: 140px;
+}
+
+.cont3 {
+    margin-top: 340px;
+    height : 100px;
+    font-size : 14px;
+    display: inline-block;
+    vertical-align : middle;
+}
+
+.cont4 {
+    height : 60px;
+    margin-left: -150px;
+    margin-top: 460px;
+    font-size : 18px;
+    text-align : center;
+    line-height : 60px;
+    vertical-align : middle;
+    color: red;
+}

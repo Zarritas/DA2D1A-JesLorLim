@@ -5,6 +5,7 @@ const txtCiudad = document.getElementById("TxtCiudad");
 const btnPais = document.getElementById("BtnPais");
 const txtPais = document.getElementById("TxtPais");
 const btnTodos = document.getElementById("BtnTodos");
+let btnOrdenar = document.getElementById("BtnOrdenar");
 let listaObj;
 function obtencionLista() {
     req.addEventListener("load", reqListener);
@@ -52,21 +53,50 @@ function reqListener() {
         contenedor.appendChild(tabla);
     })
 
-
+    btnOrdenar.addEventListener("click", () => {
+        let tabla = mostrarLista();
+        let listaOrdenada = listaObj.sort((a,b) => {
+            let sumatemperaturasA = 0;
+            let sumatemperaturasB = 0;
+            let media_temperaturaA = 0;
+            let media_temperaturaB = 0;
+            // if (a.temperatures === null || b.temperatures === null) {
+            //     return 0;
+            // }
+            for (const temp in a.temperatures) {
+                sumatemperaturasA += a.temperatures[temp];
+            }
+            for (const temp in b.temperatures) {
+                sumatemperaturasB += b.temperatures[temp];
+            }
+            if (sumatemperaturasA !== 0 && sumatemperaturasB !== 0) {
+                media_temperaturaA = sumatemperaturasA / a.temperatures.length;
+                media_temperaturaB = sumatemperaturasB / b.temperatures.length;
+            }
+            return media_temperaturaB - media_temperaturaA;
+        });
+        contenedor.innerHTML = listaOrdenada.slice(0,20).map((obj) =>{
+            crearTabla(obj,tabla);
+        }).join("");
+        contenedor.appendChild(tabla);
+    })
 }
 function mostrarLista() {
     let tabla = document.createElement("table");
     let filaCabecera = document.createElement("tr");
+
     let Ciudad = document.createElement("th")
-    Ciudad.innerText = "Ciudad";
     let Pais = document.createElement("th");
-    Pais.innerText = "Pais";
     let Fecha = document.createElement("th");
-    Fecha.innerText = "Fecha";
     let Temperatura = document.createElement("th");
-    Temperatura.innerText = "Temperatura";
     let Media = document.createElement("th");
+
+    Ciudad.innerText = "Ciudad";
+    Pais.innerText = "Pais";
+    Fecha.innerText = "Fecha";
+    Temperatura.innerText = "Temperatura";
     Media.innerText = "Media";
+
     filaCabecera.appendChild(Ciudad);
     filaCabecera.appendChild(Pais);
     filaCabecera.appendChild(Fecha);
@@ -92,24 +122,16 @@ function crearTabla(obj,tabla) {
     let fila = document.createElement("tr");
 
     let ciudad = document.createElement("td");
-    ciudad.innerText = obj.city;
-
     let pais = document.createElement("td");
-    pais.innerText = obj.country;
-
     let fecha = document.createElement("td");
-    fecha.innerText = obj.date;
-
     let temperaturas = document.createElement("td");
-    temperaturas.innerText = temperatura;
     let media = document.createElement("td");
-    media.innerText = media_temperatura;
 
-    ciudad.style.border = "2px solid black";
-    pais.style.border = "2px solid black";
-    fecha.style.border = "2px solid black";
-    temperaturas.style.border = "2px solid black";
-    media.style.border = "2px solid black";
+    ciudad.innerText = obj.city;
+    pais.innerText = obj.country;
+    fecha.innerText = obj.date;
+    temperaturas.innerText = temperatura;
+    media.innerText = media_temperatura;
 
     fila.appendChild(ciudad);
     fila.appendChild(pais);

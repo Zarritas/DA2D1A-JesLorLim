@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Temperatura</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Temperatura</h1>
     <input type="text" id="TxtCiudad"><button id="BtnCiudad">Filtrar por ciudad</button>
     <input type="text" id="TxtPais"><button id="BtnPais">Filtrar por pais</button>
-    <button id="BtnTodos">Mostrar todos</button>
+    <button id="BtnOrdenar">Ordenar</button>
+    <button id="BtnTodos" onclick="obtencionLista()">Mostrar todos</button>
     <div id="contenido"></div>
 </body>
 <script src="main.js" defer></script>
