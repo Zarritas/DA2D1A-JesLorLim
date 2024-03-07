@@ -6,16 +6,73 @@
           content="width=device-width, user-scalable=yes">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Página accesible</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        th{
+            background-color: #ccc;
+        }
+        td{
+            background-color: #eee;
+        }
+        header{
+            background-color: #ccc;
+            padding: 10px;
+        }
+        header div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header h1{
+            font-size: 5em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        img{
+            width: 300px;
+        }
+        video{
+            width: 24%;
+        }
+        caption{
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        td a{
+            display: block;
+            width: 100%;
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 <header>
     <div>
-        <span>Videos Voleibol</span>
+        <h1>Videos Voleibol</h1>
         <img src="Logo.jpg" alt="Logo">
     </div>
 </header>
 <main>
-    <table>
+
+    <table id="videos">
+        <caption><a href="#videos">Tablas</a></caption>
         <tr>
             <th>Número</th>
             <th>Vídeo</th>
@@ -25,6 +82,7 @@
             <td>1</td>
             <td>
                 <iframe src="https://www.youtube.com/embed/aJ2nRNyftnI?si=M5Gx40bsY9Wo2ReH"
+                        title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
             </td>
             <td>
