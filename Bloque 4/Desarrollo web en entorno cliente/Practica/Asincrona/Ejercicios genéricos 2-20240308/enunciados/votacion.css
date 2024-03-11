@@ -1,0 +1,73 @@
+div {
+    border: 1px solid black;
+}
+
+.voted {
+    width: 100px;
+    height: 20px;
+}
+
+.votebar {
+    height: 15px;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    margin-bottom: 1px;
+
+}
+
+.nvotes {
+    width: 30px;
+}
+
+#cabecera {
+    display: flex;
+    padding:15px;
+}
+
+#resultados {
+    margin-top: 20px;
+    display: flex;
+}
+
+#listado {
+    display: inline-block; 
+    width: 150px;
+    height: 140px;
+}
+
+#grafica {
+    display: inline-block;  
+    width: 200px;
+    height: 140px;
+}
+
+#votes {
+    display: inline-block;  
+    width: 100px;
+    height: 140px;
+}
+
+#choice1 {
+    width: 70px;
+    background-color: blue;
+}
+
+#choice2 {
+    width: 50px;
+    background-color: cyan;
+}
+
+#choice3 {
+    width: 32px;
+    background-color: skyblue;    
+}
+
+#choice4 {
+    width: 26px;
+    background-color: cornflowerblue;
+}
+
+#choice5 {
+    width: 22px;
+    background-color: aquamarine;
+}

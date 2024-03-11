@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Torres de Hanoi</title>
+
+    <link type="text/css" rel="stylesheet" href="hanoi.css"/>
+</head>
+<body>
+<div id="cabecera">
+    <div>Pasa las piezas a la tercera torre</div>
+</div>    
+
+<div id="torre1">
+    <div class="base"></div>    
+    <div class="pieza1 bajo"></div>        
+    <div class="pieza2 centro"></div>        
+    <div class="pieza3 cima"></div>
+</div>
+
+<div id="torre2">
+    <div class="base"></div>    
+    <div class="pieza2 bajo"></div>        
+    <div class="pieza1 centro"></div>        
+    <div class="pieza3 cima"></div>
+</div>
+
+<div id="torre3">
+    <div class="base"></div>    
+    <div class="pieza3 bajo"></div>
+    <div class="pieza2 centro"></div>        
+    <div class="pieza1 cima"></div>        
+</div>
+
+<div id="control">
+    <span>Origen</span><br>
+    <input type="radio" id="src1" name="source" value="Torre1"><label for="src1">Torre 1</label>
+    <input type="radio" id="src2" name="source" value="Torre2"><label for="src2">Torre 2</label>
+    <input type="radio" id="src3" name="source" value="Torre3"><label for="src3">Torre 3</label>
+    <br>
+    <span>Destino</span><br>
+    <input type="radio" id="dst1" name="target" value="Torre1"><label for="dst1">Torre 1</label>
+    <input type="radio" id="dst2" name="target" value="Torre2"><label for="dst2">Torre 2</label>
+    <input type="radio" id="dst3" name="target" value="Torre3"><label for="dst3">Torre 3</label>
+</div>
+
+
+</body>
+<script src="hanoi.js"></script>
+</html>

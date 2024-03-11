@@ -1,0 +1,68 @@
+div {
+    border: 1px solid black;
+}
+
+#torre1 {
+    display: inline-block; 
+    width: 150px;
+    height: 140px;
+}
+
+#torre2 {
+    display: inline-block; 
+    width: 150px;
+    height: 140px;
+}
+
+#torre3 {
+    display: inline-block; 
+    width: 150px;
+    height: 140px;
+}
+
+.base {
+    position: relative;
+    left: 35px;
+    top: 110px;
+    width: 80px;
+    height: 5px;    
+    background-color: blue;
+
+}
+
+.pieza1 {
+    width: 60px;
+    height: 20px;    
+    left: 45px; 
+    background-color: red;
+}
+
+.pieza2 {
+    width: 40px;
+    height: 20px;
+    left: 55px;    
+    background-color: green;
+}
+
+.pieza3 {
+    width: 20px;
+    height: 20px;   
+    left: 65px; 
+    background-color: yellow;
+}
+
+.bajo {
+    position: relative;
+    top: 80px;
+}
+
+.centro {
+    position: relative;
+    top: 35px;
+}
+
+.cima {
+    position: relative;
+    top: -10px;
+}
+
