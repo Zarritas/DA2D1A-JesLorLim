@@ -1,0 +1,7 @@
+El código HTML de la primera versión es poco accesible por estas razones:
+	Uso excesivo de estilos en línea y en la etiqueta <style>: El CSS dentro de la etiqueta <style> y los estilos en línea hacen que sea difícil de mantener y comprender el diseño visual de la página.
+	Falta de etiquetas semánticas: El uso de etiquetas como <div> y <main> sin un propósito semántico claro dificulta la comprensión de la estructura y el flujo del contenido.
+	Falta de contenido legible para usuarios no videntes: No hay etiquetas <alt> en las imágenes, lo que dificulta la comprensión del contenido para usuarios con discapacidad visual que utilizan lectores de pantalla.
+	Blink y marquee: El uso de la etiqueta <blink> y la propiedad marquee no estándar pueden ser molestos para algunos usuarios y no son accesibles para todos.
+	Falta de etiquetas de cierre: Algunas etiquetas como <a>, <td>, <th> y <im> no están cerradas correctamente, lo que podría causar problemas de renderizado en algunos navegadores.
+	Falta de descripciones: Algunas partes del código no tienen comentarios o descripciones claras, lo que dificulta la comprensión del propósito de ciertas secciones.

@@ -1,0 +1,6 @@
+El código HTML de la segunda versión es accesible por estas razones:
+	Uso de etiquetas semánticas HTML5: Se utilizan etiquetas semánticas como <header>, <main>, <table>, <caption>, <tr>, <th>, y <td>, lo que mejora la estructura y la accesibilidad del contenido.
+	Atributos alt en imágenes: Todas las imágenes tienen atributos "alt", lo que mejora la accesibilidad para usuarios con discapacidades visuales o aquellos que utilizan navegadores de texto.
+	Uso de enlaces de texto: Se utilizan enlaces de texto descriptivos en lugar de imágenes o iconos para proporcionar una navegación clara y accesible.
+	Uso apropiado de tablas: Se proporciona una etiqueta <caption> descriptiva para identificar el contenido de la tabla ylas etiquetas de encabezado <th> y las celdas de datos <td>.
+	Estilos CSS mejor estructurados: Los estilos CSS se organizan de manera más clara y coherente en el segundo código.
