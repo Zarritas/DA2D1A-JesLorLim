@@ -1,0 +1,58 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo de uso de varias promesas encadenadas -->	
+
+    <title>Promesas</title>
+	<script>
+		function decirGanador(numero){
+			// Promesa que se resuelve en dos segundos
+			return new Promise((resolve, reject) => {
+				setTimeout(function(){
+					if (numero % 2 == 0){
+						resolve("<div>¡Éxito, es un número par!</div>");
+					} else {
+						reject("<div>¡Error, es un número impar!</div>");
+					}
+				}, 5000);
+			});
+		}
+	
+		document.addEventListener("DOMContentLoaded", () => {
+			let log = document.getElementById('log'); 
+		
+			// Con Promise.resolve o Promise.reject se puede hacer algo "thenable"
+			// Esto quiere decir que se puede ejecutar como una promesa y esperar a que termine
+			Promise.resolve("Prueba thenable")
+				.then(prueba1 => {
+					log.insertAdjacentHTML('beforeend', `<div>Mientras me llegó ${prueba1}</div>`)
+					
+					// Todo lo que hay en el then se devuelve como thenable
+					// No hace falta en este caso crear otra promesa o hacer un Promise.resolve (o reject)
+					return "Otra prueba"; 
+				})
+				.then(prueba2 => log.insertAdjacentHTML('beforeend', `<div>Y también me llegó ${prueba2}</div>`))
+				// El último then llega sin un return previo, pero se puede ejecutar sin parámetros
+				.then(() => log.insertAdjacentHTML('beforeend', "Y envié un último mensaje"));
+		
+			// Prueba a cambiar el número que llega como parámetro
+			decirGanador(10).
+				then(data1 => {
+					log.insertAdjacentHTML('beforeend', data1);
+					log.insertAdjacentHTML('beforeend', "<div>Vamos a por otra</div>");
+					return decirGanador(5);	
+				})
+				.then(data2 => log.insertAdjacentHTML('beforeend', data2))
+				.catch(error => log.insertAdjacentHTML('beforeend', error));
+		  
+			// No espera a la promesa
+			log.insertAdjacentHTML('beforeend', "<div>En 5 segundos sabrás si has ganado</div>");
+		});	
+	</script>
+  </head>
+  <body>
+    <h1>Ejemplo de promesas</h1>
+	
+	<div id="log"></div>  
+  </body>
+</html>

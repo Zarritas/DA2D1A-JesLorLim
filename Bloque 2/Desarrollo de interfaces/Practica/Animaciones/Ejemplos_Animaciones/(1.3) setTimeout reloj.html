@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Este ejemplo implementa un reloj con la función setTimeout de jQuery -->
+	<script>
+		function startTime() {
+		  var today = new Date();
+		  var h = today.getHours();
+		  var m = today.getMinutes();
+		  var s = today.getSeconds();
+		  
+		  // Se añade un cero delante en los números menores que 10
+		  m = checkTime(m);
+		  s = checkTime(s);
+		  
+		  document.getElementById("txt").innerHTML = h + ":" + m + ":" + s;
+		  
+		  // Se genera cada 500 milisegundos (0,5 segundos) para que el efecto sea lo más parecido posible a un reloj
+		  var t = setTimeout(() => startTime(), 500);
+		}
+
+		function checkTime(i) {
+		  if (i < 10) {
+			i = "0" + i;
+		  }
+		  return i;
+		}
+	
+		// Cuando se carga el DOM se ejecuta startTime por primera vez
+		document.addEventListener("DOMContentLoaded", startTime);
+	    
+	</script>
+</head>
+<body>
+	<div id="txt"></div>
+</body>
+</html>

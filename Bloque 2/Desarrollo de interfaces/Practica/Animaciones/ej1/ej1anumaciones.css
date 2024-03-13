@@ -1,0 +1,33 @@
+body{
+    display: flex;
+}
+#div1{
+    border: 2px solid black;
+    width: 60%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+.animado{
+    height: fit-content;
+    width: 300px;
+    visibility: hidden;
+}
+#cabecera{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#primero{
+    background-color: yellow;
+}
+#segundo{
+    background-color: purple;
+}
+#tercero{
+    background-color: orange;
+}
+#cuarto{
+    background-color: green;
+}

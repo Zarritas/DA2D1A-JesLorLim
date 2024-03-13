@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo básico de uso de promesas que ejecuta un callback después de un setTimeout 
+		En este caso se controla qué ocurriría en caso de error -->	
+
+    <title>Promesas</title>
+	<script>
+		function decirGanador(numero){
+			// Promesa que se resuelve en dos segundos
+			return new Promise((resolve, reject) => {
+				setTimeout(function(){
+					if (numero % 2 == 0){
+						resolve("<div>¡Éxito, es un número par!</div>");
+					} else {
+						reject("<div>¡Error, es un número impar!</div>");
+					}
+				}, 5000);
+			});
+		}
+	
+		document.addEventListener("DOMContentLoaded", () => {
+			let log = document.getElementById('log'); 
+		
+			// Versión 1. Si la promesa no se resuelve el error se captura con then
+			decirGanador(10).
+				then(data => log.insertAdjacentHTML('beforeend', "Desde then 1: " + data))	   
+				.catch(error => log.insertAdjacentHTML('beforeend', "Desde catch 1: " + error));
+		  
+			// Versión 2. El then tiene un segundo parámetro que se corresponde con la función reject
+			decirGanador(5).
+				then(data => log.insertAdjacentHTML('beforeend', "Desde then 2: " + data), 
+				error => log.insertAdjacentHTML('beforeend', "Desde catch 2: " + error));
+		  
+			// No espera a la promesa
+			log.insertAdjacentHTML('beforeend', "<div>En 5 segundos sabrás si has ganado</div>");
+		});	
+	</script>
+  </head>
+  <body>
+    <h1>Ejemplo de promesas</h1>
+	
+	<div id="log"></div>  
+  </body>
+</html>

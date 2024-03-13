@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Este ejemplo implementa una animación completa con requestAnimationframe que se puede detener con cancelAnimationFrame -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+	</head>
+	<style>
+		div {
+		  width: 50px;
+		  height: 10px;
+		  background: orange;
+		  float: left;
+		}
+
+		main {
+		  position: absolute;
+		  display: flex;		  
+		}
+	</style>
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			var globalID;
+
+			// Se crean divs continuamente hasta que el usuario decide parar
+			function repeatOften() {
+			  let div = document.createElement("div");
+			  document.querySelector("body").appendChild(div);
+			  
+			  globalID = requestAnimationFrame(repeatOften);
+			}
+
+			document.querySelector("#start").addEventListener("click", () => globalID = requestAnimationFrame(repeatOften));
+			document.querySelector("#stop").addEventListener("click", () => cancelAnimationFrame(globalID));
+		});
+	</script>
+
+<body>
+	<main>
+		<button id="start">start</button>
+		<button id="stop">stop</button>		
+	</main>
+</body>

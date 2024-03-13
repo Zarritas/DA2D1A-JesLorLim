@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<!-- En este ejemplo se muestra el funcionamiento de una animación básica con setInterval -->
+	<style>
+		#container {
+		  width: 400px;
+		  height: 400px;
+		  position: relative;
+		  background: yellow;
+		}
+		#animate {
+		  width: 50px;
+		  height: 50px;
+		  position: absolute;
+		  background-color: red;
+		}
+	</style>
+	
+	<script>
+		function myMove() {
+		  let elem = document.getElementById("animate");   
+		  let pos = 0;
+		  var id = setInterval(frame, 5);
+		  
+		  // Cuando se mueven 350 píxeles se para la animación
+		  function frame() {
+			if (pos == 350) {
+			  clearInterval(id);
+			} else {
+			  pos++; 
+			  elem.style.top = pos + "px"; 
+			  elem.style.left = pos + "px"; 
+			}
+		  }
+		}
+	</script>
+<body>
+	<p><button onclick="myMove()">Haz click para empezar la animación</button></p> 
+
+	<div id ="container">
+	  <div id ="animate"></div>
+	</div>
+
+
+</body>
+</html>

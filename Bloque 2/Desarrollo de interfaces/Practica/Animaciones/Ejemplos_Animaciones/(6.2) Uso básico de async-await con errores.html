@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo básico de async-await que permite añadir funciones asíncronas en JavaScript.
+		En este caso se explica cómo controlar los errores de las promesas -->	
+
+    <title>Promesas</title>
+	<script>
+		function decirGanador(numero){
+			// Promesa que se resuelve en dos segundos
+			return new Promise((resolve, reject) => {
+				setTimeout(function(){
+					if (numero % 2 == 0){
+						resolve("<div>¡Éxito, es un número par!</div>");
+					} else {
+						reject("<div>¡Error, es un número impar!</div>");
+					}
+				}, 5000);
+			});
+		}
+	
+		document.addEventListener("DOMContentLoaded", () => {
+			let log = document.getElementById('log'); 
+			
+			// Procesar promesas con errores
+			async function procesarJuego(numero) {
+				let mensaje;
+				try {
+					log.insertAdjacentHTML('beforeend', `<div>En 5 segundos sabrás si has ganado con el número ${numero}</div>`);
+				
+					// Se esperan los 5 segundos indicados en la promesa
+					mensaje = await decirGanador(numero);		
+
+					log.insertAdjacentHTML('beforeend', mensaje);					
+								
+				} catch(e) {
+					// El error de la excepción es aquel devuelto en el reject
+					log.insertAdjacentHTML('beforeend', e)
+				}				
+			}
+
+			// Todo lo que queramos ejecutar de manera encadenada debe ir en async
+			async function probar(){
+				// Con la versión async/await, cada iteración espera a que acabe la promesa anterior
+				let numeros = [10, 5];
+				
+				for (let cont in numeros){
+					await procesarJuego(numeros[cont]);
+				}			
+			}
+				
+			probar();		
+		});	
+	</script>
+  </head>
+  <body>
+    <h1>Ejemplo de promesas</h1>
+	
+	<div id="log"></div>  
+  </body>
+</html>

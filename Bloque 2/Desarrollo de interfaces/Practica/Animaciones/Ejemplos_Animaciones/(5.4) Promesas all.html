@@ -1,0 +1,54 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo básico de uso de ejecución de varias promesas a la vez con Promise.all 
+		Solo se generará una respuesta si se ejecutan todas correctamente -->	
+
+    <title>Promesas</title>
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.querySelector("#btn").addEventListener("click", () => {
+				let log = document.getElementById('log');	
+				
+				var p1 = new Promise((resolve, reject) => { 
+					setTimeout(resolve, 4000, 'una'); 
+				}); 
+
+				var p2 = new Promise((resolve, reject) => { 
+					setTimeout(resolve, 1000, 'dos'); 
+				});
+
+				var p3 = new Promise((resolve, reject) => {
+					setTimeout(resolve, 3000, 'tres');
+				});
+
+				var p4 = new Promise((resolve, reject) => {
+					setTimeout(resolve, 2000, 'cuatro');
+				});
+
+				var p5 = new Promise((resolve, reject) => {
+					// Ejecutar reject si queremos generar un error y que fallen todas las promesas
+					setTimeout(resolve, 5000, 'cinco');
+					//reject("promesa 5 fallida");
+				});
+
+				Promise.all([p1, p2, p3, p4, p5]).then(values => { 
+					log.insertAdjacentHTML('beforeend', values);
+				}, reason => {
+					log.insertAdjacentHTML('beforeend', reason);
+				});
+			});	
+			
+		});
+	</script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Ejemplo All</h1>
+
+      <button id="btn" class="btn btn-primary">¡Haz click para generar varias promesas en 5 segundos!</button>
+      <div id="log"></div>
+
+    </div>  
+  </body>
+</html>

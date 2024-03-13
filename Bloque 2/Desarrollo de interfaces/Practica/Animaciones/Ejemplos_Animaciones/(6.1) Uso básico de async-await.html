@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo básico de async-await que permite añadir funciones asíncronas en JavaScript -->	
+
+    <title>Promesas</title>
+	<script>
+		// Promesa que se resuelve en dos segundos
+		function miPrimeraPromesa(){
+			return new Promise((resolve, reject) => {
+				setTimeout(function(){
+					resolve("¡Éxito!"); 
+				}, 2000);
+			});
+		}
+		
+		document.addEventListener("DOMContentLoaded", () => {
+			// Si queremos emplear await para que el código espere a las promesas, 
+			// es necesario encerrar las instrucciones en una función con el modificador async
+			async function generarAsync(){
+				let log = document.getElementById('log'); 
+		
+				// Se ejecuta primero
+				log.insertAdjacentHTML('beforeend', "Antes de la promesa<br/>");	
+				
+				// En este caso se espera a ejecutar la promesa
+				let resultado = await miPrimeraPromesa();
+			  
+				log.insertAdjacentHTML('beforeend', `Después de la promesa y devuelve: ${resultado}<br/>`);	
+			}
+
+			generarAsync();
+		});	
+	</script>
+  </head>
+  <body>
+    <h1>Ejemplo de promesas</h1>
+	
+	<div id="log"></div>  
+  </body>
+</html>

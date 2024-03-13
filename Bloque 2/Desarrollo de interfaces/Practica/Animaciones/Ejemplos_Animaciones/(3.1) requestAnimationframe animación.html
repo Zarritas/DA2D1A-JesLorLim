@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Este ejemplo implementa una animación sencilla con requestAnimationframe -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+	</head>
+	<style>
+		#SomeElementYouWantToAnimate{
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+		}
+	</style>
+
+<body>
+    <div id="SomeElementYouWantToAnimate"></div>
+
+	<script>
+		var start = null;
+		var element = document.getElementById('SomeElementYouWantToAnimate');
+
+		function step(timestamp) {
+		  if (!start) start = timestamp;
+		  var progress = timestamp - start;
+		  
+		  // Como queremos un desplazamiento de 200px en 2000 milisegundos, la operación es una regla de tres
+		  // Por ejemplo, si en 2000 milisegundos son 200px, entonces en 1000 milisegundos serán X
+		  element.style.transform = 'translate(' + Math.min(progress*200/2000, 200) + 'px, ' + Math.min(progress*200/2000, 200) + 'px)';
+		  
+		  if (progress < 2000) {
+			window.requestAnimationFrame(step);
+		  }
+		}
+
+		window.requestAnimationFrame(step);
+	</script>
+</body>
+

@@ -1,0 +1,65 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo de uso de varias promesas encadenadas en bucle con recursividad -->	
+
+    <title>Promesas</title>
+	<script>
+		function decirGanador(numero){
+			// Promesa que se resuelve en dos segundos
+			return new Promise((resolve, reject) => {
+				setTimeout(function(){
+					if (numero % 2 == 0){
+						resolve("<div>¡Éxito, es un número par!</div>");
+					} else {
+						reject("<div>¡Error, es un número impar!</div>");
+					}
+				}, 5000);
+			});
+		}	
+
+		document.addEventListener("DOMContentLoaded", () => {
+			// Array con números con los que llamaremos 
+			let numeros = [10, 5, 8];
+			
+			// No espera a la promesa
+			log.insertAdjacentHTML('beforeend', "<div>Empezamos la partida: Cada 5 segundos sabrás si has ganado</div>");
+
+			// Si generamos varias promesas a la vez, se lanzan simultáneamente y acaban al mismo tiempo
+			// El problema es que no lanzamos la siguiente promesa en el then o catch, por tanto el código no "espera"
+			/*for (let cont in numeros){
+				decirGanador(numeros[cont])
+					.then(data1 => log.insertAdjacentHTML('beforeend', data1))
+					.catch(error => log.insertAdjacentHTML('beforeend', error));
+			}*/ 
+
+			var cont = 0;
+			
+			// Vamos a generar una secuencia que continúa mientras que el usuario "gane" o tenga números
+			// Prueba a descomentar el código anterior y probar la versión con un array
+			function jugar(){
+				if (cont < numeros.length){
+					log.insertAdjacentHTML('beforeend', "Número " + numeros[cont] + "...");
+					decirGanador(numeros[cont])
+						.then(data1 => {
+							log.insertAdjacentHTML('beforeend', data1);
+							cont++;
+							jugar();
+						})
+						.catch(error => {
+							log.insertAdjacentHTML('beforeend', error);
+							log.insertAdjacentHTML('beforeend', "Fin de la partida");
+						});
+				}
+			}
+
+			jugar();			
+		});	
+	</script>
+  </head>
+  <body>
+    <h1>Ejemplo de promesas</h1>
+	
+	<div id="log"></div>  
+  </body>
+</html>

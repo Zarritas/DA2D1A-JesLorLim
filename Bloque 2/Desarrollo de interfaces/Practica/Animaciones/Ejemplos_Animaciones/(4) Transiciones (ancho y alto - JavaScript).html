@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Esta animación crea una transición que ralentiza el cambio de ancho
+	y alto de un recuadro durante 2 y 4 segundos respectivamente tras pulsar un botón
+	que cambia estos estilos mediante JavaScript -->	
+	<style> 
+		div.recuadro {
+		  width: 100px;
+		  height: 100px;
+		  background: red;
+		  transition: width 2s, height 4s;
+		  margin-bottom: 1em;
+		}
+
+	</style>
+	<script type="text/javascript">
+		function redimensionar(ancho, alto){
+			document.querySelector(".recuadro").style.width = ancho;
+			document.querySelector(".recuadro").style.height = alto;
+		}
+	</script>
+</head>
+<body>
+
+	<h1>Transiciones en CSS</h1>
+
+	<p>Haz click en el botón para ver el efecto</p>
+	<div class="recuadro"></div>
+	
+	<button onclick="redimensionar('300px', '300px')">Cambiar estilos</button>
+	<button onclick="redimensionar('100px', '100px')">Deshacer cambios</button>
+</body>
+
+</html>

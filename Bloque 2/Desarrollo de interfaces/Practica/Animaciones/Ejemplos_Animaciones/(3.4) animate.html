@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Este ejemplo implementa una animación completa con requestAnimationframe que se puede detener con cancelAnimationFrame -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+	</head>
+	<style>
+		main{
+			display: flex;
+		}
+	
+		.anim {
+			width: 50px;
+			height: 10px;
+			margin-right: 1em;
+			background: orange;
+		}
+
+	</style>
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			document.getElementById("anim1").animate([
+			// keyframes
+				{ transform: 'translateY(0px)' },
+				{ transform: 'translateY(300px)' }
+			], {
+				// En este caso solo se indica la duración y que se ejecute mientras el navegador siga abierto
+				duration: 1000,
+				iterations: Infinity
+			});
+			
+			document.getElementById("anim2").animate([
+			// keyframes
+				{ transform: 'translateY(0px)' },
+				{ transform: 'translateY(300px)' }
+			], 1500); // Si se pasa como parámetro solo un número, se corresponde a la duración y el resto de opciones por defecto (solo se ejecuta una vez)
+			
+			document.getElementById("anim3").animate([
+			// keyframes
+				{ transform: 'translateY(0px)' },
+				{ transform: 'translateY(300px)' }
+			], {
+				// Añadimos un retardo de un segundo. La animación solo se ejecuta dos veces
+				duration: 1000,
+				iterations: 2,
+				delay: 1000
+			});
+			
+			document.getElementById("anim4").animate([
+			// keyframes
+				{ transform: 'translateY(0px)' },
+				{ transform: 'translateY(300px)' }
+			], {
+				// En este caso modificamos la velocidad con 'easing', la dirección y el CSS final del elemento donde se aplica la animación se corresponde con el último estado (forwards)
+				duration: 3000,
+				easing: 'ease-in-out',
+				iterations: 1,
+				direction: 'alternate',
+				fill: 'forwards'
+			});			
+			
+			document.getElementById("anim5").animate([
+			// keyframes
+				{ transform: 'translateY(0px)' },
+				{ transform: 'translateY(300px)' }
+			], {
+				// Durante el segundo de espera la animación se encuentra en un estado equivalente a la interación 1.5 (esto lo permite especificar iterationStart)
+				duration: 1000,
+				iterations: 10,
+				delay: 1000,
+				direction: 'alternate-reverse',
+				fill: 'backwards',
+				iterationStart: 1.5
+			});
+		});
+	</script>
+
+<body>
+	<main>
+		<div id="anim1" class="anim"></div>
+		<div id="anim2" class="anim"></div>
+		<div id="anim3" class="anim"></div>
+		<div id="anim4" class="anim"></div>
+		<div id="anim5" class="anim"></div>
+	</main>
+</body>

@@ -1,0 +1,35 @@
+body{
+    display: flex;
+}
+#div1{
+    display: grid;
+    grid-template-areas:    "label label input input"
+                            "primero primero primero primero"
+                            "iniciar parar null null";
+    grid-template-columns: 0.5fr 0.5fr 1fr 1fr;
+    gap: 5px;
+    width: 60%;
+}
+.boton{
+    background-color: lightgray;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+    display: inline;
+}
+.texto{
+grid-area: primero;
+}
+input{
+    grid-area: input;
+}
+label{
+    grid-area: label;
+}
+#cabecera{
+    font-size: large;
+    font-weight: bolder;
+}

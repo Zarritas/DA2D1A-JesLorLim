@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Este ejemplo implementa un reloj con setInterval y clearInterval -->
+	<script>
+		var myVar;
+
+		function myTimer() {		  
+		   let d = new Date();
+		   let t = d.toLocaleTimeString();
+		   document.getElementById("demo").innerHTML = t;
+		}
+		
+		function myStartFunction(){
+		   myVar = setInterval(myTimer, 500);
+		}
+
+		function myStopFunction() {
+		   clearInterval(myVar);
+		}
+	
+		// Cuando se carga el DOM se ejecuta startTime por primera vez
+		document.addEventListener("DOMContentLoaded", myStartFunction);
+	    
+	</script>
+</head>
+<body>
+	<p id="demo"></p>
+
+	<button onclick="myStartFunction()">Reload time</button>
+	<button onclick="myStopFunction()">Stop time</button>
+</body>
+</html>

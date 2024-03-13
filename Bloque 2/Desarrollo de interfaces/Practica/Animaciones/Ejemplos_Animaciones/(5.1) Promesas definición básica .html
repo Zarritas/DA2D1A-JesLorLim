@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Ejemplo básico de uso de promesas que ejecuta un callback después de un setTimeout -->	
+
+    <title>Promesas</title>
+	<script>
+		// Promesa que se resuelve en dos segundos
+		let miPrimeraPromesa = new Promise((resolve, reject) => {
+		  setTimeout(function(){
+			resolve("¡Éxito!"); 
+		  }, 2000);
+		});
+
+		document.addEventListener("DOMContentLoaded", () => {
+		  let log = document.getElementById('log'); 
+		
+		  miPrimeraPromesa.then(function(data) {
+			// Este código solo se ejecuta si ha ido bien el setTimeout
+			log.insertAdjacentHTML('beforeend', data);	   
+		  });
+		  
+		  // No espera a la promesa
+		  log.insertAdjacentHTML('beforeend', "Antes del then sin esperar a la promesa<br/>");
+		});	
+	</script>
+  </head>
+  <body>
+    <h1>Ejemplo de promesas</h1>
+	
+	<div id="log"></div>  
+  </body>
+</html>

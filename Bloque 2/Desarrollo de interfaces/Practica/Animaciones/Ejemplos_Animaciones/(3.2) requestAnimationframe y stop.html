@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <!-- Este ejemplo implementa una animación sencilla con requestAnimationframe que se puede detener con cancelAnimationFrame -->
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+	</head>
+	<style>
+		#SomeElementYouWantToAnimate{
+			width: 300px;
+			height: 300px;
+			border: 1px solid black;
+			position: relative;
+			z-index: -1;
+		}
+		
+	</style>
+
+<body>
+    <div id="SomeElementYouWantToAnimate"></div>
+	<button id="stop" onclick="stop()">Parar</button>
+	<button id="stop" onclick="start()">Reanudar</button> <!-- Si pasan dos segundos, la animación se muestra directamente al final -->
+
+	<script>
+		var init = null;
+		var element = document.getElementById('SomeElementYouWantToAnimate');
+		var myReq;
+
+		function step(timestamp) {
+		
+		  if (!init) init = timestamp;
+		  var progress = timestamp - init;
+		  
+		  // Es la misma proporción que en el ejemplo anterior, pero si nos fijamos en los valores, se pueden ahorrar operaciones
+		  // Al ser 200px en 2000ms, el desplazamiento es el número de milisegundos actual dividido entre 10
+		  // Esto obviamente solo funciona en este ejemplo al tener un desplazamiento y milisegundos proporcional
+		  // Si cambiamos el desplazamiento o número de segundos habrá que utlizar la operación del ejemplo 3.1
+		  element.style.transform = 'translate(' + Math.min(progress / 10, 200) + 'px, ' + Math.min(progress / 10, 200) + 'px)';
+		  
+		  if (progress < 2000) {
+			start();
+		  }
+		}
+		
+		// Detiene la ejecución
+		function stop(){
+			window.cancelAnimationFrame(myReq);
+		}
+		
+		// Comienza la ejecución
+		function start(){
+			myReq = window.requestAnimationFrame(step);
+		}
+
+		start();
+		
+	</script>
+</body>
+

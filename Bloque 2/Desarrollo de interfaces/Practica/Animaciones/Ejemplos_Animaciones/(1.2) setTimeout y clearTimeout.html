@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Este ejemplo muestra un funcionamiento básico de setTimeout y clearTimeout -->
+	<script>
+		var myVar;
+
+		function myFunction() {
+		  myVar = setTimeout(() => alert("Hello"), 3000);
+		}
+
+		function myStopFunction() {
+		  clearTimeout(myVar);
+		}
+	</script>
+</head>
+<body>
+	<p>El primer botón "Probar" muestra un alert en 3 segundos</p>
+	<p>El segundo botón "Stop", si se hace click antes de 3 segundos deja de mostrar el alert</p>
+
+	<button onclick="myFunction()">Probar</button>
+	<button onclick="myStopFunction()">Stop</button>
+</body>
+</html>

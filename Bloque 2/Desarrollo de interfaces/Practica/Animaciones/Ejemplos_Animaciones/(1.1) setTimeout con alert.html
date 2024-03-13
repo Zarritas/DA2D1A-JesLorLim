@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Este ejemplo muestra un funcionamiento básico de setTimeout -->
+	<script>
+		var myVar;
+
+		function myFunction() {
+		  myVar = setTimeout(alertFunc, 3000);
+		}
+
+		function alertFunc() {
+		  alert("Hello!");
+		}
+
+		// Para que funcione esta línea debería moverse el script debajo del todo, o llevarlo al evento onload
+		//document.getElementById("btnProbar").addEventListener("click", myFunction);
+	</script>
+</head>
+<body>
+	<p>Haz click en el botón para esperar tres segundos y mostrar "Hello!"</p>
+	<button id="btnProbar" onclick="myFunction()">Probar</button>
+</body>
+</html>
