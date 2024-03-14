@@ -1,0 +1,65 @@
+body{
+    padding: 20px;
+}
+#div1{
+    display: flex;
+    gap: 2px;
+    width: 60%;
+}
+#div2{
+    width: 60%;
+    height: 80vh;
+    position: relative;
+}
+.texto{
+    position: absolute;
+}
+#segundo>#primero{
+    background-color: red;
+}
+#primero{
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    padding: 5px;
+    font-size: large;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+#segundo{
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    font-size: large;
+    font-weight: bolder;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+
+}
+
+.boton{
+    background-color: lightgray;
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    font-weight: bolder;
+    cursor: pointer;
+    display: inline;
+}
+.texto{
+    grid-area: primero;
+}
+input{
+    grid-area: input;
+}
+label{
+    grid-area: label;
+}
+#cabecera{
+    font-size: large;
+    font-weight: bolder;
+}

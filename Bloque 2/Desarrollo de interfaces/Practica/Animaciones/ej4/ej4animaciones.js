@@ -4,6 +4,40 @@ const botones = document.getElementsByClassName("boton");
 cuadrado.style.left = "0px";
 cuadrado.style.top = "0px";
 
+const draggable = document.getElementById('primero');
+const droppable = document.getElementById('segundo');
+
+let isDragging = false;
+
+draggable.addEventListener('mousedown', () => {
+    isDragging = true;
+});
+
+document.addEventListener('mousemove', (event) => {
+    if (isDragging) {
+        draggable.style.left = `${event.clientX - draggable.offsetWidth / 2}px`;
+        draggable.style.top = `${event.clientY - draggable.offsetHeight / 2}px`;
+    }
+});
+
+droppable.addEventListener('mouseup', () => {
+    isDragging = false;
+    draggable.style.backgroundColor = 'red';
+    draggable.textContent = '';
+});
+document.getElementById("div2").addEventListener('mouseup', () => {
+    isDragging = false;
+    draggable.style.backgroundColor = 'greenyellow';
+    draggable.textContent = 'Pincha aquí también';
+});
+
+droppable.addEventListener('dragover', (event) => {
+    event.preventDefault();
+});
+
+droppable.addEventListener('dragleave', () => {
+    draggable.style.backgroundColor = 'red';
+});
 function incrementarDerecha(){
     let der=0;
     let intervaloDer = setInterval(()=> {
