@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="commit de repintado de formulario">
-      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/Animaciones/ej5/ej1animaciones.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/Animaciones/ej5/ej5animaciones.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/Animaciones/ej5/ej5anumaciones.css" afterDir="false" />
+    <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="mas commits">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +128,7 @@
       <workItem from="1708079706265" duration="1000" />
       <workItem from="1708941046875" duration="2000" />
       <workItem from="1709890662887" duration="94000" />
-      <workItem from="1710500863841" duration="25000" />
+      <workItem from="1710500863841" duration="539000" />
     </task>
     <task id="LOCAL-00001" summary="psp 10/11/2023 11:25">
       <option name="closed" value="true" />
@@ -156,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700514472183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mas commits">
+      <option name="closed" value="true" />
+      <created>1710500932836</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1710500932836</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +190,8 @@
     <MESSAGE value="psp 10/11/2023 11:25" />
     <MESSAGE value="psp 10/11/2023 11:25 la caja magica" />
     <MESSAGE value="commit de repintado de formulario" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit de repintado de formulario" />
+    <MESSAGE value="mas commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="mas commits" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
