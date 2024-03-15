@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="commit de repintado de formulario" />
+    <list default="true" id="be5b6361-e3e3-4400-9fd9-ff0c2e96c0a0" name="Changes" comment="commit de repintado de formulario">
+      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/Animaciones/ej5/ej1animaciones.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/Animaciones/ej5/ej5animaciones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bloque 2/Desarrollo de interfaces/Practica/Animaciones/ej5/ej5anumaciones.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +59,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2WpucSbAqFLKjHX1YZWPXc9lRwb" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -79,7 +83,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -126,6 +130,7 @@
       <workItem from="1708079706265" duration="1000" />
       <workItem from="1708941046875" duration="2000" />
       <workItem from="1709890662887" duration="94000" />
+      <workItem from="1710500863841" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="psp 10/11/2023 11:25">
       <option name="closed" value="true" />
@@ -170,6 +175,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Bloque 1/Desarrollo web entorno servidor/practica/JesLorLim-FormularioRepintado" />
+      <path value="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/Examenes anteriores 1ra ev/Arco y flecha" />
+      <path value="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja magica final" />
+      <path value="$PROJECT_DIR$/Bloque 3/Programacion de servicios y procesos/Practica/La caja misteriosa" />
+    </ignored-roots>
     <MESSAGE value="psp 10/11/2023 11:25" />
     <MESSAGE value="psp 10/11/2023 11:25 la caja magica" />
     <MESSAGE value="commit de repintado de formulario" />
