@@ -34,6 +34,9 @@ document.getElementById("div2").addEventListener('mouseup', () => {
 droppable.addEventListener('dragover', (event) => {
     event.preventDefault();
 });
+droppable.addEventListener('dragover', (event) => {
+    event.preventDefault();
+});
 
 droppable.addEventListener('dragleave', () => {
     draggable.style.backgroundColor = 'red';
