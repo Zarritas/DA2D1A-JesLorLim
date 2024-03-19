@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies...Examen DWEC marzo 2024</title>
+    <link type="text/css" rel="stylesheet" href="movies.css" />
+  </head>
+  <body>
+<!-- JesúesLorenzoLimon-->
+    <div id="controles">
+      <table>
+        <tr>
+          <td>Código:</td>
+          <td  colspan="2"><input type="text" placeholder="ABC99" id="code"/></td>
+          <td><input type="button" value="Go!" id="find"></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td colspan="2">
+            <div id="btnall" class="boton">Mostrar todos</div>
+          </td>
+          <td></td>
+        </tr>
+        <tr><td colspan="4"><hr></td></tr>
+        <tr>
+          <td colspan="4">Selecciona una productora de cine</td>
+        </tr>
+        <tr>
+          <td width="150px">Blockbuster Films<input type="radio" name="productora" value="B"></td>
+          <td width="150px">Cinema Paradiso<input type="radio" name="productora" value="C"></td>
+          <td width="150px">Starlight Studios<input type="radio" name="productora" value="S"></td>
+          <td width="150px">DreamWorks Pictures<input type="radio" name="productora" value="D"></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <hr>
+          </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="2"><div id="btnorden" class="boton">Ordenar por título  de película</div></td>
+            <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="canvas">
+      <div id="showdetail">
+
+      </div>
+      <div id="showtable" >
+      </div>
+    </div>
+  </body>
+  <script src="moviesdata.js"></script>
+  <script src="JLLmovies.js"></script>
+</html>

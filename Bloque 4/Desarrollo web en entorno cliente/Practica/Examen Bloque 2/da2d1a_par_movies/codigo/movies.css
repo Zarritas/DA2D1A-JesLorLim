@@ -1,0 +1,76 @@
+div {
+  /* border: solid 1px grey; */
+  padding: 10px;
+}
+
+table {
+  /* border: solid 1px red; */
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+}
+
+.celda {
+  width: 150px;
+  height: 10px;
+  text-align: center;
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(117, 118, 121);
+}
+
+.cabecera {
+  background-color: rgb(2, 2, 46);
+  color: rgb(227, 240, 240);
+}
+
+.boton {
+  width: 150px;
+  align-items: center;
+  background-color: gainsboro;
+  box-shadow: 2px 2px gray;
+  text-align: center;
+}
+
+#canvas {
+  width: 80%;
+  display: flex;
+}
+
+#showtable {
+  margin: 10px;
+}
+
+#showdetail {
+  width: 30%;
+  margin: 10px;
+  float: right;
+}
+
+.fondo {
+  background-color: rgb(64, 68, 110);
+  height: 300px;
+}
+
+.foto {
+  height: 50px;
+  width: 140px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(201, 202, 223);
+  float: left;
+}
+
+.code {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 15px;
+  color: azure;
+}
+
+.data {
+  font-size: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: azure;
+  margin: 5px;
+}
