@@ -1,0 +1,3 @@
+interface Carnivoro {
+    fun comerCarne()
+}

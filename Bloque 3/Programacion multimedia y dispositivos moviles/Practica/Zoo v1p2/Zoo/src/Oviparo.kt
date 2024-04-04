@@ -1,0 +1,4 @@
+interface Oviparo {
+    fun ponerHuevos()
+}
+

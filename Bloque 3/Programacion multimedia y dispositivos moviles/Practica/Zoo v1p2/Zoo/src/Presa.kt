@@ -1,0 +1,4 @@
+interface Presa {
+    fun huir()
+}
+

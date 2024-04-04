@@ -1,0 +1,4 @@
+interface Depredador {
+    fun cazar()
+}
+

@@ -1,0 +1,4 @@
+Soy el jefe de ventas de PC componentes
+-- Hablo sobre las ventas del ultimo año en comparacion con el anterior OK
+-- Hablo sobre el target de personas que compran OK
+-- Previsión de ventas en Tarjetas gráficas
